@@ -1,4 +1,5 @@
 # pixi environments
 .pixi
 *.egg-info
+.ipynb_checkpoints/
 
