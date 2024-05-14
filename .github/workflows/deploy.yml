@@ -13,8 +13,8 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
-          enablement: 'true'
-      - uses: prefix-dev/setup-pixi@v0.6.0    
+          enablement: "true"
+      - uses: prefix-dev/setup-pixi@v0.6.0
         with:
           path: ./_build/html
 
