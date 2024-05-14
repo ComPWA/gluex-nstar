@@ -9,5 +9,11 @@ master_doc = "index"
 project = "GlueX N-Star"
 
 # basic build settings
-exclude_patterns = [".pixi", "_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints"]
+exclude_patterns = [
+    ".pixi",
+    "_build",
+    "Thumbs.db",
+    ".DS_Store",
+    "**.ipynb_checkpoints",
+]
 nitpicky = True
