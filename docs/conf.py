@@ -6,6 +6,7 @@ exclude_patterns = [
     "_build",
 ]
 extensions = ["myst_nb"]
+html_theme = "nature"
 master_doc = "index"
 nitpicky = True
 project = "GlueX N-Star"
