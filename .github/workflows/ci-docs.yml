@@ -3,7 +3,6 @@ on:
   pull_request:
     branches: [main]
   push:
-    # Runs on pushes targeting the default branch
     branches: [main]
 jobs:
   build:
@@ -14,7 +13,7 @@ jobs:
       - run: pixi run docnb
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_build/html
+          path: docs/_build/html
 
   deploy:
     environment:
