@@ -136,7 +136,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-13.2.0-hc0a3c3a_7.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libtiff-4.6.0-h1dd3fc0_3.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libuuid-2.38.1-h0b41bf4_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/libuv-1.48.0-hd590300_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libwebp-1.4.0-h2c329e2_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libwebp-base-1.4.0-hd590300_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libxcb-1.15-h0b41bf4_0.conda
@@ -162,7 +161,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.5-h59595ed_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nodeenv-1.8.0-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/linux-64/nodejs-20.12.2-hb753e55_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/notebook-shim-0.2.4-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/numpy-1.26.4-py312heda63a1_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/openssl-3.3.0-hd590300_0.conda
@@ -2567,20 +2565,6 @@ packages:
   size: 33601
   timestamp: 1680112270483
 - kind: conda
-  name: libuv
-  version: 1.48.0
-  build: hd590300_0
-  subdir: linux-64
-  url: https://conda.anaconda.org/conda-forge/linux-64/libuv-1.48.0-hd590300_0.conda
-  sha256: b7c0e8a0c93c2621be7645b37123d4e8d27e8a974da26a3fba47a9c37711aa7f
-  md5: 7e8b914b1062dd4386e3de4d82a3ead6
-  depends:
-  - libgcc-ng >=12
-  license: MIT
-  license_family: MIT
-  size: 899979
-  timestamp: 1709913354710
-- kind: conda
   name: libwebp
   version: 1.4.0
   build: h2c329e2_0
@@ -3029,27 +3013,6 @@ packages:
   license_family: BSD
   size: 34358
   timestamp: 1683893151613
-- kind: conda
-  name: nodejs
-  version: 20.12.2
-  build: hb753e55_0
-  subdir: linux-64
-  url: https://conda.anaconda.org/conda-forge/linux-64/nodejs-20.12.2-hb753e55_0.conda
-  sha256: 2f5813d9718963861314c6d9f75fe4630c3e6d078ec1e792770daf9ce7ac5c4f
-  md5: 1fd16ca757a195c4357a1fbb2cb553b5
-  depends:
-  - __glibc >=2.17,<3.0.a0
-  - icu >=73.2,<74.0a0
-  - libgcc-ng >=12
-  - libstdcxx-ng >=12
-  - libuv >=1.48.0,<1.49.0a0
-  - libzlib >=1.2.13,<1.3.0a0
-  - openssl >=3.2.1,<4.0a0
-  - zlib
-  license: MIT
-  license_family: MIT
-  size: 17183636
-  timestamp: 1714128011970
 - kind: conda
   name: notebook-shim
   version: 0.2.4
