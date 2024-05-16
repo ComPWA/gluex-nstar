@@ -1,5 +1,6 @@
 # MyST-NB Quickstart
 
 ```{toctree}
-hello
+intro
+report-0
 ```
