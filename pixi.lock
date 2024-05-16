@@ -111,6 +111,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyterlab-git-0.50.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyterlab-lsp-5.1.0-pyhd8ed1ab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyterlab-myst-2.4.2-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/jupyterlab_code_formatter-2.2.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyterlab_pygments-0.3.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyterlab_server-2.27.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jupyterlab_widgets-3.0.10-pyhd8ed1ab_0.conda
@@ -2320,6 +2321,22 @@ packages:
   - pkg:pypi/jupyterlab-myst
   size: 2127008
   timestamp: 1714146125212
+- kind: conda
+  name: jupyterlab_code_formatter
+  version: 2.2.1
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/jupyterlab_code_formatter-2.2.1-pyhd8ed1ab_0.conda
+  sha256: 8873858a9d3b730a1d6a199be6d4fa67367837d6fa55aa8fe464040522cd906d
+  md5: d67b33450635a2ad1b55d48838eb1eca
+  depends:
+  - jupyter_server >=1.21,<3
+  - python >=3.7
+  license: MIT
+  license_family: MIT
+  size: 28923
+  timestamp: 1684681885304
 - kind: conda
   name: jupyterlab_pygments
   version: 0.3.0
