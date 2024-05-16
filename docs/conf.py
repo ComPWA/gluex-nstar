@@ -6,7 +6,14 @@ exclude_patterns = [
     "_build",
 ]
 extensions = ["myst_nb"]
-html_theme = "pydata_sphinx_theme"
+html_theme = "sphinx_book_theme"
 master_doc = "index"
+myst_enable_extensions = [
+    "amsmath",
+    "colon_fence",
+    "dollarmath",
+    "html_image",
+    "smartquotes",
+]
 nitpicky = True
 project = "GlueX N-Star"
