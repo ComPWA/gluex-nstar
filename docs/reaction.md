@@ -1,17 +1,17 @@
-# Reaction and amplitude models
+# Reaction and Models
 
 <!-- cspell:ignore Mathieu -->
 <!-- This amplitude model is adapted from the [Lecture 11 in STRONG2020 HaSP School](https://indico.ific.uv.es/event/6803/contributions/21223/) by Vincent Mathieu. -->
 
-## Reaction
+## Reaction with Resonances and Decay
 
-The (photo-production) reaction is $ \gamma p \to \eta \pi^0 p$, it is described by a amplitude model with three possible resonances: $a_2$, $\Delta^+$, and $N^*$.
+The (photo-production) reaction is $ \gamma p \to \eta \pi^0 p$, its decay is described by an amplitude model with three possible resonances: $a_2$, $\Delta^+$, and $N^*$.
 
 ```{image} https://github.com/ComPWA/compwa-org/assets/17490173/ec6bf191-bd5f-43b0-a6cb-da470b071630
 :width: 100%
 ```
 
-## Amplitude models
+## Amplitude Models
 
 The amplitude model is adapted from the [Lecture 11 in STRONG2020 HaSP School](https://indico.ific.uv.es/event/6803/contributions/21223/), only the Breit-Wigner and Spherical harmonics terms are kept for doing PWA eventually, as shown in equation {eq}`BW_SH_label`.
 
@@ -24,7 +24,7 @@ A^{31} &=& \frac{c_0}{s-m^2_{N^*}+im_{N^*} \Gamma_{N^*}}
 \end{eqnarray}
 $$ (BW_SH_label)
 
-where s is the Mandelstam variable, m is the mass, $\Gamma$ is the width, Y is the spherical harmonics, $\Omega$ is the decay angles (a pair of Euler angles), and a, b, and c are coefficients
+where s is the Mandelstam variable, m is the mass, $\Gamma$ is the width, $Y^m_l$ is the spherical harmonics, $\Omega_i$ is the decay angles (a pair of Euler angles), and $a_i$, $b_i$, and $c_i$ are coefficients
 
 :::{note}
 Mandelstam variables $s_{ij}=(p_i+p_j)^2$, $t_i=(p_a-p_i)^2$, and $u_i=(p_b-p_i)^2$.
