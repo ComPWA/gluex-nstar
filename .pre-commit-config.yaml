@@ -18,7 +18,7 @@ repos:
       - id: prettier
 
   - repo: https://github.com/redeboer/taplo-pre-commit
-    rev: v0.9.1rc1
+    rev: 0.9.1rc1
     hooks:
       - id: taplo
 
