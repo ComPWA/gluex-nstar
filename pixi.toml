@@ -20,6 +20,7 @@ sphinx-autobuild \
 """
 
 [dependencies]
+ampform = ">=0.15.2,<0.16"
 black = ">=24.4.2,<24.5"
 graphviz = ">=9.0.0,<9.1"
 ipywidgets = ">=8.1.2,<8.2"
