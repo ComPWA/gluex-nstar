@@ -1,3 +1,7 @@
+ci:
+  autoupdate_commit_msg: "MAINT: autoupdate pre-commit config"
+  autoupdate_schedule: quarterly
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
@@ -18,7 +22,7 @@ repos:
       - id: prettier
 
   - repo: https://github.com/redeboer/taplo-pre-commit
-    rev: v0.9.1rc1
+    rev: 0.9.1rc1
     hooks:
       - id: taplo
 
