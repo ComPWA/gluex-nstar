@@ -22,6 +22,7 @@ sphinx-autobuild \
 [dependencies]
 black = ">=24.4.2,<24.5"
 graphviz = ">=9.0.0,<9.1"
+ipython = ">=8.24.0,<8.25"
 ipywidgets = ">=8.1.2,<8.2"
 isort = ">=5.13.2,<5.14"
 jax = ">=0.4.26,<0.5"
