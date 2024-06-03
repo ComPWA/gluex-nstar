@@ -9,6 +9,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-2_gnu.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/accessible-pygments-0.0.4-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/alabaster-0.7.16-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/ampform-0.15.4-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/anyio-4.3.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/argon2-cffi-23.1.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/argon2-cffi-bindings-21.2.0-py312h98912ed_4.conda
@@ -232,6 +233,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/scipy-1.13.0-py312hc2bc53b_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/send2trash-1.8.3-pyh0d859eb_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/setuptools-69.5.1-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/singledispatchmethod-1.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/six-1.16.0-pyh6c4a22f_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/smmap-5.0.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/sniffio-1.3.1-pyhd8ed1ab_0.conda
@@ -358,6 +360,27 @@ packages:
   - pkg:pypi/alabaster
   size: 18365
   timestamp: 1704848898483
+- kind: conda
+  name: ampform
+  version: 0.15.4
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/ampform-0.15.4-pyhd8ed1ab_0.conda
+  sha256: 624cff712efc18b9671a8252d619c0d09333145820d317730790ec56c7f22d3d
+  md5: b84e06a4afa0667bb831782d42aff262
+  depends:
+  - attrs >=20.1.0
+  - importlib-metadata
+  - python >=3.7
+  - qrules >=0.9.6
+  - singledispatchmethod
+  - sympy >=1.10
+  - typing-extensions
+  license: GPL-3.0-or-later
+  license_family: GPL
+  size: 76402
+  timestamp: 1716399533026
 - kind: conda
   name: anyio
   version: 4.3.0
@@ -4567,6 +4590,21 @@ packages:
   - pkg:pypi/setuptools
   size: 501790
   timestamp: 1713094963112
+- kind: conda
+  name: singledispatchmethod
+  version: '1.0'
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/singledispatchmethod-1.0-pyhd8ed1ab_0.tar.bz2
+  sha256: c743d4361e5512bccb902b16898ca2186091518c70be8a6c47c196c634048148
+  md5: e237d56c3f2fa2cb34d9dd0553590f94
+  depends:
+  - python >=2.7
+  license: MIT
+  license_family: MIT
+  size: 9246
+  timestamp: 1659474768029
 - kind: conda
   name: six
   version: 1.16.0
