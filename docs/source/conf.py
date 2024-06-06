@@ -7,7 +7,6 @@ exclude_patterns = [
     "_build",
 ]
 extensions = [
-    "myst_nb",
     "sphinx.ext.duration",
     "sphinx.ext.doctest",
     "sphinx.ext.autodoc",
