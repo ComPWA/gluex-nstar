@@ -39,7 +39,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/decorator-5.1.1-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/defusedxml-0.7.1-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/distlib-0.3.8-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/docutils-0.21.2-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/docutils-0.20.1-py312h7900ff3_3.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/entrypoints-0.4-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/exceptiongroup-1.2.0-pyhd8ed1ab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/executing-2.0.1-pyhd8ed1ab_0.conda
@@ -216,9 +216,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/soupsieve-2.5-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinx-7.3.7-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinx-autobuild-2024.4.16-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/sphinx_rtd_theme-2.0.0-pyha770c72_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-applehelp-1.0.8-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-devhelp-1.0.6-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-htmlhelp-2.0.5-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-jquery-4.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-jsmath-1.0.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-qthelp-1.0.7-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-serializinghtml-1.1.10-pyhd8ed1ab_0.conda
@@ -835,18 +837,19 @@ packages:
   timestamp: 1702383349284
 - kind: conda
   name: docutils
-  version: 0.21.2
-  build: pyhd8ed1ab_0
-  subdir: noarch
-  noarch: python
-  url: https://conda.anaconda.org/conda-forge/noarch/docutils-0.21.2-pyhd8ed1ab_0.conda
-  sha256: 362bfe3afaac18298c48c0c6a935641544077ce5105a42a2d8ebe750ad07c574
-  md5: e8cd5d629f65bdf0f3bb312cde14659e
+  version: 0.20.1
+  build: py312h7900ff3_3
+  build_number: 3
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/docutils-0.20.1-py312h7900ff3_3.conda
+  sha256: b9fb75d806afc53d9d7b98edb0c45ac38a3cc983916b8dac4ad7ddac5c18a024
+  md5: 1b90835ae26b9b8250b302649359a989
   depends:
-  - python >=3.9
+  - python >=3.12,<3.13.0a0
+  - python_abi 3.12.* *_cp312
   license: CC-PDDC AND BSD-3-Clause AND BSD-2-Clause AND ZPL-2.1
-  size: 403226
-  timestamp: 1713930478970
+  size: 898253
+  timestamp: 1701882735141
 - kind: conda
   name: entrypoints
   version: '0.4'
@@ -3954,6 +3957,24 @@ packages:
   size: 16466
   timestamp: 1713319509734
 - kind: conda
+  name: sphinx_rtd_theme
+  version: 2.0.0
+  build: pyha770c72_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/sphinx_rtd_theme-2.0.0-pyha770c72_0.conda
+  sha256: 8545c806d03092fd0236db6663c88036eab2dc99e34c91cd36c0704db03b148a
+  md5: baf6d9a33df1a789ca55e3b404c7ea28
+  depends:
+  - docutils <0.21
+  - python >=3.6
+  - sphinx >=5,<8
+  - sphinxcontrib-jquery >=4,<5
+  license: MIT
+  license_family: MIT
+  size: 2614217
+  timestamp: 1701183633165
+- kind: conda
   name: sphinxcontrib-applehelp
   version: 1.0.8
   build: pyhd8ed1ab_0
@@ -4001,6 +4022,21 @@ packages:
   license_family: BSD
   size: 33499
   timestamp: 1705118297318
+- kind: conda
+  name: sphinxcontrib-jquery
+  version: '4.1'
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-jquery-4.1-pyhd8ed1ab_0.conda
+  sha256: 2e5f16a2d58f9a31443ffbb8ce3852cfccf533a6349045828cd2e994ef0679ca
+  md5: 914897066d5873acfb13e75705276ad1
+  depends:
+  - python >=2.7
+  - sphinx >=1.8
+  license: 0BSD AND MIT
+  size: 112985
+  timestamp: 1678809100921
 - kind: conda
   name: sphinxcontrib-jsmath
   version: 1.0.1
