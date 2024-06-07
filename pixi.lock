@@ -156,9 +156,12 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/myst-nb-1.1.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/myst-parser-3.0.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nbclient-0.10.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/nbconvert-7.16.4-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nbconvert-core-7.16.4-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/nbconvert-pandoc-7.16.4-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nbdime-4.0.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nbformat-5.10.4-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/nbsphinx-0.9.4-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.5-h59595ed_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nodeenv-1.8.0-pyhd8ed1ab_0.conda
@@ -169,6 +172,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/opt_einsum-3.3.0-pyhc1e730c_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/overrides-7.7.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/packaging-24.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/pandoc-3.2-ha770c72_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pandocfilters-1.5.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/pango-1.52.2-ha41ecd1_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/parso-0.8.4-pyhd8ed1ab_0.conda
@@ -2914,6 +2918,22 @@ packages:
   size: 27851
   timestamp: 1710317767117
 - kind: conda
+  name: nbconvert
+  version: 7.16.4
+  build: hd8ed1ab_0
+  subdir: noarch
+  noarch: generic
+  url: https://conda.anaconda.org/conda-forge/noarch/nbconvert-7.16.4-hd8ed1ab_0.conda
+  sha256: 7a4a759b8930833cbfffbfd92da069f1d3fd43760ea629c8612b9e7ae9fff0e8
+  md5: c9d64b8a7ee8e6bdbf0e7d8aa7f39601
+  depends:
+  - nbconvert-core 7.16.4 pyhd8ed1ab_0
+  - nbconvert-pandoc 7.16.4 hd8ed1ab_0
+  license: BSD-3-Clause
+  license_family: BSD
+  size: 8434
+  timestamp: 1714477296945
+- kind: conda
   name: nbconvert-core
   version: 7.16.4
   build: pyhd8ed1ab_0
@@ -2947,6 +2967,22 @@ packages:
   license_family: BSD
   size: 189004
   timestamp: 1714477286178
+- kind: conda
+  name: nbconvert-pandoc
+  version: 7.16.4
+  build: hd8ed1ab_0
+  subdir: noarch
+  noarch: generic
+  url: https://conda.anaconda.org/conda-forge/noarch/nbconvert-pandoc-7.16.4-hd8ed1ab_0.conda
+  sha256: d3bd8b38a74825e9e502f3251fba167b303d7ad324cd4e41d459bfa3c118c9ee
+  md5: 391934bd1a79990c23df1d1809ddc821
+  depends:
+  - nbconvert-core 7.16.4 pyhd8ed1ab_0
+  - pandoc
+  license: BSD-3-Clause
+  license_family: BSD
+  size: 8479
+  timestamp: 1714477291801
 - kind: conda
   name: nbdime
   version: 4.0.1
@@ -2990,6 +3026,27 @@ packages:
   license_family: BSD
   size: 101232
   timestamp: 1712239122969
+- kind: conda
+  name: nbsphinx
+  version: 0.9.4
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/nbsphinx-0.9.4-pyhd8ed1ab_0.conda
+  sha256: 2d5756e2ab94ba73d630b97bc8ce6b0ea6eb60aadc2ad7e47e6e6d48fe3f87e8
+  md5: 9dc80eaeff56fb67dbf4f871b81bc13a
+  depends:
+  - docutils
+  - jinja2
+  - nbconvert
+  - nbformat
+  - python >=3.6
+  - sphinx
+  - traitlets
+  license: MIT
+  license_family: MIT
+  size: 33630
+  timestamp: 1715074950890
 - kind: conda
   name: ncurses
   version: '6.5'
@@ -3153,6 +3210,18 @@ packages:
   license_family: APACHE
   size: 49832
   timestamp: 1710076089469
+- kind: conda
+  name: pandoc
+  version: '3.2'
+  build: ha770c72_0
+  subdir: linux-64
+  url: https://conda.anaconda.org/conda-forge/linux-64/pandoc-3.2-ha770c72_0.conda
+  sha256: 418348076c1a39170efb0bdc8a584ddd11e9ed0ff58ccd905488d3f165ca98ba
+  md5: 8c924f0b7f3e064b1c954a08e7c32fba
+  license: GPL-2.0-or-later
+  license_family: GPL
+  size: 21088628
+  timestamp: 1715499623651
 - kind: conda
   name: pandocfilters
   version: 1.5.0

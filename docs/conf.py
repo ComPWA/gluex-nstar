@@ -7,6 +7,8 @@ exclude_patterns = [
     "_build",
 ]
 extensions = [
+    "myst_nb",
+    "nbsphinx",
     "sphinx.ext.duration",
     "sphinx.ext.doctest",
     "sphinx.ext.autodoc",
@@ -22,6 +24,7 @@ templates_path = ["_templates"]
 html_theme = "sphinx_rtd_theme"
 master_doc = "index"
 nitpicky = True
+nb_execution_mode = "auto"
 project = "GlueX N-Star"
 release = "0.1"
 version = "0.1.0"
