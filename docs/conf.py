@@ -1,6 +1,7 @@
 project = "GlueX-Nstar"
 author = "ComPWA"
 release = "0.1"
+
 exclude_patterns = [
     "**.ipynb_checkpoints",
     ".DS_Store",
@@ -24,12 +25,15 @@ intersphinx_mapping = {
 }
 intersphinx_disabled_domains = ["std"]
 templates_path = ["_templates"]
+
 html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
+
 master_doc = "index"
 nitpicky = True
 nb_execution_mode = "auto"
 version = "0.1.0"
+
 myst_enable_extensions = [
     "colon_fence",
     "deflist",
