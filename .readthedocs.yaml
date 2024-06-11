@@ -7,6 +7,6 @@ build:
   jobs:
     post_install:
       - curl -fsSL https://pixi.sh/install.sh | bash
-      - pixi shell
+      - pixi install
 sphinx:
   configuration: docs/conf.py
