@@ -9,8 +9,5 @@ Investigation of the N\* Resonances in the GlueX Experiment
 ## Contents
 
 ```{toctree}
-:titlesonly:
-:maxdepth: 2
-
 hello
 ```
