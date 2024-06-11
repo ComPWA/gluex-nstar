@@ -8,6 +8,7 @@ build:
     post_install:
       - curl -fsSL https://pixi.sh/install.sh | bash
       - export PATH="$HOME/.pixi/bin:$PATH" && pixi install
-      - pixi run docnb
 sphinx:
   configuration: docs/conf.py
+  builder: html
+  build_command: export PATH="$HOME/.pixi/bin:$PATH" && pixi shell -c "sphinx-build -T -b html -d _build/doctrees -D language=en . $READTHEDOCS_OUTPUT/html"
