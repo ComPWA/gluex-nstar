@@ -9,5 +9,4 @@ sphinx:
   configuration: docs/conf.py
 
 commands:
-  - pixi shell
-  - pixi run docnb
+  - ./build-docs.sh
