@@ -6,7 +6,7 @@ build:
     python: "3.12"
   jobs:
     post_install:
-      - curl -fsSL https://pixi.sh/install.sh | bash
+      - source .pixi/bin/activate
       - pixi install
 sphinx:
   configuration: docs/conf.py
