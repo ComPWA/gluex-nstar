@@ -4,12 +4,9 @@ build:
   os: "ubuntu-22.04"
   tools:
     python: "3.12"
-  steps:
-    - run:
-        cmd: curl -sSL https://install.pixi.dev | sh
-    - run:
-        cmd: pixi install
-    - run:
-        cmd: pixi run docnb
+  jobs:
+    post_install:
+      - curl -fsSL https://pixi.sh/install.sh | bash
+      - pixi shell
 sphinx:
   configuration: docs/conf.py
