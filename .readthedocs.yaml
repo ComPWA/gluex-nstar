@@ -9,4 +9,6 @@ sphinx:
   configuration: docs/conf.py
 
 commands:
-  - ./build-docs.sh
+  - curl -sSL https://install.pixi.dev | sh
+  - pixi install
+  - pixi run docnb
