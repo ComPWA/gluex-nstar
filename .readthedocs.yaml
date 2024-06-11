@@ -6,8 +6,9 @@ build:
     python: "3.12"
   jobs:
     post_install:
-      - run: curl -fsSL https://pixi.sh/install.sh | bash && export PATH="$HOME/.pixi/bin:$PATH" && pixi install
-      - run: pixi run docnb
+      - curl -fsSL https://pixi.sh/install.sh | bash
+      - export PATH="$HOME/.pixi/bin:$PATH" && pixi install
+      - pixi shell
 
 sphinx:
   configuration: docs/conf.py
