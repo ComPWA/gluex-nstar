@@ -4,9 +4,10 @@ build:
   os: "ubuntu-22.04"
   tools:
     python: "3.12"
-  jobs:
-    post_install:
-      - curl -fsSL https://pixi.sh/install.sh | bash && export PATH="$HOME/.pixi/bin:$PATH" && pixi install && pixi run docnb
 
 sphinx:
   configuration: docs/conf.py
+
+commands:
+  - curl -fsSL https://pixi.sh/install.sh | bash && export PATH="$HOME/.pixi/bin:$PATH" && pixi install
+  - pixi run docnb
