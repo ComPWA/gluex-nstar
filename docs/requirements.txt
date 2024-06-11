@@ -1,4 +1,0 @@
-linkify-it-py
-myst-nb
-sphinx
-sphinx-rtd-theme
