@@ -30,6 +30,7 @@ myst_enable_extensions = [
     "substitution",
     "tasklist",
 ]
-nitpicky = True
+
 nb_execution_mode = "auto"
+nitpicky = True
 version = "0.1.0"
