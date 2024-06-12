@@ -7,8 +7,8 @@ build:
   jobs:
     post_install:
       - curl -fsSL https://pixi.sh/install.sh | bash
-      - export PATH="$HOME/.pixi/bin:$PATH" && pixi install
-      - pixi shell -c "pixi install && sphinx-build -T -b html -d _build/doctrees -D language=en . $READTHEDOCS_OUTPUT/html"
+    pre_build:
+      - pixi shell -c "true"
 sphinx:
   builder: html
   configuration: docs/conf.py
