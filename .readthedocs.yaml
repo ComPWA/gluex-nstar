@@ -8,7 +8,13 @@ build:
     post_install:
       - curl -fsSL https://pixi.sh/install.sh | bash
     pre_build:
-      - export PATH="$HOME/.pixi/bin:$PATH" && pixi shell -c "echo Pixi shell activated"
+      - export PATH="$HOME/.pixi/bin:$PATH" && pixi shell
+
+python:
+  install:
+    - method: pip
+      path: .
+
 sphinx:
   builder: html
   configuration: docs/conf.py
