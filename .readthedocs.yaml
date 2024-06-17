@@ -1,0 +1,10 @@
+version: "2"
+build:
+  os: "ubuntu-22.04"
+  tools:
+    python: mambaforge-latest
+  commands:
+    - mamba install -c conda-forge -c nodefaults pixi
+    - pixi install
+    - pixi run docnb
+    - pixi run "rm -rf $READTHEDOCS_OUTPUT/html && cp -r docs/_build/html $READTHEDOCS_OUTPUT/html"
