@@ -7,3 +7,4 @@ build:
     - mamba install -c conda-forge -c nodefaults pixi
     - pixi install
     - pixi run docnb
+    - pixi run "rm -rf $READTHEDOCS_OUTPUT/html && cp -r docs/_build/html $READTHEDOCS_OUTPUT/html"
