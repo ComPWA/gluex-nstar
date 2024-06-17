@@ -18,7 +18,7 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
 ]
-html_theme = "sphinx_rtd_theme"
+html_theme = "sphinx_book_theme"
 master_doc = "index"
 myst_enable_extensions = [
     "colon_fence",
