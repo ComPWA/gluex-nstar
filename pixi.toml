@@ -1,8 +1,11 @@
 [project]
 authors = ["Vitor Shen <17490173+shenvitor@users.noreply.github.com>"]
 channels = ["conda-forge"]
+license = "MIT"
+license-file = "LICENSE"
 name = "gluex-nstar"
 platforms = ["linux-64"]
+readme = "README.md"
 
 [tasks]
 docnb = """
