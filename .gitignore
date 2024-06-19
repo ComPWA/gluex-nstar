@@ -1,4 +1,7 @@
 *.egg-info
 .ipynb_checkpoints/
 .pixi
+.virtual_documents/
 node_modules/
+**/*.pickle
+**/*.json
