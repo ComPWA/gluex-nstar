@@ -1,8 +1,11 @@
 [project]
 authors = ["Vitor Shen <17490173+shenvitor@users.noreply.github.com>"]
 channels = ["conda-forge"]
+license = "MIT"
+license-file = "LICENSE"
 name = "gluex-nstar"
 platforms = ["linux-64"]
+readme = "README.md"
 
 [tasks]
 docnb = """
@@ -28,7 +31,6 @@ isort = ">=5.13.2,<5.14"
 jax = ">=0.4.27,<0.5"
 jaxlib = ">=0.4.23,<0.5"
 jupyter = ">=1.0.0,<1.1"
-jupyter-lsp = ">=2.2.5,<2.3"
 jupyterlab = ">=4.2.0,<4.3"
 jupyterlab-git = ">=0.50.0,<0.51"
 jupyterlab-lsp = ">=5.1.0,<5.2"
