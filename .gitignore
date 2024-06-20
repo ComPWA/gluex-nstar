@@ -3,5 +3,3 @@
 .pixi
 .virtual_documents/
 node_modules/
-**/*.pickle
-**/*.json
