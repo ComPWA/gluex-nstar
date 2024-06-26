@@ -16,6 +16,7 @@ exclude_patterns = [
 extensions = [
     "myst_nb",
     "sphinx_comments",
+    "sphinx_copybutton",
 ]
 html_theme = "sphinx_book_theme"
 master_doc = "index"

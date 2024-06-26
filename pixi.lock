@@ -259,6 +259,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinx-autobuild-2024.4.16-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinx-book-theme-1.1.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinx-comments-0.0.3-pyh9f0ad1d_0.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/noarch/sphinx-copybutton-0.5.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-applehelp-1.0.8-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-devhelp-1.0.6-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-htmlhelp-2.0.5-pyhd8ed1ab_0.conda
@@ -5082,6 +5083,22 @@ packages:
   license_family: MIT
   size: 8062
   timestamp: 1598556068938
+- kind: conda
+  name: sphinx-copybutton
+  version: 0.5.2
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/sphinx-copybutton-0.5.2-pyhd8ed1ab_0.conda
+  sha256: 7ea21f009792e7c69612ddba367afe0412b3fdff2e92f439e8cd222de4b40bfe
+  md5: ac832cc43adc79118cf6e23f1f9b8995
+  depends:
+  - python >=3
+  - sphinx >=1.8
+  license: MIT
+  license_family: MIT
+  size: 17801
+  timestamp: 1681468271927
 - kind: conda
   name: sphinxcontrib-applehelp
   version: 1.0.8
