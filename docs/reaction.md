@@ -66,6 +66,7 @@ In our case:
   - The possible $m$ values are $−2,−1,0,1,2$. Each of these values corresponds to different orientations of the d-wave. The wave type is solely determined by $l$ and all these $m$ values still describe d-wave characteristics.
 - $A^{23}$ amplitude represents a p-wave interaction, as indicated by $l=1$.
   - The possible $m$ values are $−1,0,1$. Each of these values corresponds to different orientations of the p-wave. Similarly, these values are all p-wave orientations.
-- $A^{31}$ amplitude represents a s-wave interaction, as indicated by $l=0$. - The only possible $m$ value is 0, which is consistent with the spherical symmetry of s-waves.
+- $A^{31}$ amplitude represents a s-wave interaction, as indicated by $l=0$.
+  - The only possible $m$ value is 0, which is consistent with the spherical symmetry of s-waves.
 
 :::
