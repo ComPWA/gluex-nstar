@@ -1,3 +1,6 @@
+comments_config = {
+    "hypothesis": True,
+}
 exclude_patterns = [
     "**.ipynb_checkpoints",
     ".DS_Store",
@@ -5,7 +8,10 @@ exclude_patterns = [
     "Thumbs.db",
     "_build",
 ]
-extensions = ["myst_nb"]
+extensions = [
+    "myst_nb",
+    "sphinx_comments",
+]
 html_theme = "sphinx_book_theme"
 master_doc = "index"
 myst_enable_extensions = [
