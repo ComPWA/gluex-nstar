@@ -1,6 +1,5 @@
 comments_config = {
     "hypothesis": True,
-    "dokieli": True,
 }
 exclude_patterns = [
     "**.ipynb_checkpoints",
