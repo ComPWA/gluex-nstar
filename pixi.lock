@@ -258,6 +258,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinx-7.3.7-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinx-autobuild-2024.4.16-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinx-book-theme-1.1.2-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/sphinx-comments-0.0.3-pyh9f0ad1d_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-applehelp-1.0.8-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-devhelp-1.0.6-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/sphinxcontrib-htmlhelp-2.0.5-pyhd8ed1ab_0.conda
@@ -5065,6 +5066,22 @@ packages:
   license_family: BSD
   size: 248083
   timestamp: 1708037011444
+- kind: conda
+  name: sphinx-comments
+  version: 0.0.3
+  build: pyh9f0ad1d_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/sphinx-comments-0.0.3-pyh9f0ad1d_0.tar.bz2
+  sha256: 2578e9a84f3d4435ad1065daa55ad22a401968c09842220337e8195336f94839
+  md5: 2ae3ce35de0c1cec45c94182694f8d1b
+  depends:
+  - python
+  - sphinx >=1.8
+  license: MIT
+  license_family: MIT
+  size: 8062
+  timestamp: 1598556068938
 - kind: conda
   name: sphinxcontrib-applehelp
   version: 1.0.8
