@@ -17,5 +17,6 @@ address to the issue ✅&nbsp;[ComPWA/gluex-nstar#1](https://github.com/ComPWA/g
 ```{toctree}
 reaction
 pgamma-state
+branching_fraction
 all-in-one
 ```
