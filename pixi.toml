@@ -7,21 +7,6 @@ name = "gluex-nstar"
 platforms = ["linux-64"]
 readme = "README.md"
 
-[tasks]
-docnb = """
-sphinx-build \
-    -nW --keep-going \
-    -b html \
-    docs/ docs/_build/html
-"""
-docnblive = """
-sphinx-autobuild \
-    --watch docs \
-    -nW --keep-going \
-    -b html \
-    docs/ docs/_build/html
-"""
-
 [dependencies]
 ampform = ">=0.15.4,<0.16"
 black = ">=24.4.2,<24.5"
@@ -51,3 +36,39 @@ sphinx-book-theme = ">=1.1.2,<1.2"
 sphinx-comments = ">=0.0.3,<0.1"
 sphinx-copybutton = ">=0.5.2,<0.6"
 sympy = ">=1.12,<2"
+
+[tasks.doc]
+cmd = """
+sphinx-build \
+    -nW --keep-going \
+    -b html \
+    docs/ docs/_build/html
+"""
+
+[tasks.doclive]
+cmd = """
+sphinx-autobuild \
+    --watch docs \
+    -nW --keep-going \
+    -b html \
+    docs/ docs/_build/html
+"""
+
+[tasks.docnb]
+cmd = """
+sphinx-build \
+    -nW --keep-going \
+    -b html \
+    docs/ docs/_build/html
+"""
+env = {EXECUTE_NB = "yes"}
+
+[tasks.docnblive]
+cmd = """
+sphinx-autobuild \
+    --watch docs \
+    -nW --keep-going \
+    -b html \
+    docs/ docs/_build/html
+"""
+env = {EXECUTE_NB = "yes"}

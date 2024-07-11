@@ -39,6 +39,13 @@ repos:
     hooks:
       - id: taplo
 
+  - repo: https://github.com/pappasam/toml-sort
+    rev: v0.23.1
+    hooks:
+      - id: toml-sort
+        args:
+          - --in-place
+
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.5.1
     hooks:
