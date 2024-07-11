@@ -22,6 +22,7 @@ myst_enable_extensions = [
     "html_image",
     "smartquotes",
 ]
+nb_execution_mode = "cache"
 nb_execution_show_tb = True
 nb_execution_timeout = -1
 nitpicky = True
