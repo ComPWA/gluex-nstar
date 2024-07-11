@@ -16,8 +16,8 @@ address to the issue ✅&nbsp;[ComPWA/gluex-nstar#1](https://github.com/ComPWA/g
 
 ```{toctree}
 reaction
-pgamma-state
 symbolics
+pgamma-state
 branching-fraction
 ampform/etapi0p
 ```
