@@ -10,4 +10,4 @@ We are doing amplitude analysis and Partial Wave Analysis (PWA) with [CAS-assist
 - The main focus of this research would be:<br>
   $p \gamma \to$ Resonances (e.g. N\*, K\*) $\to K^+ \pi^0 \Lambda$
 
-Current long-term plan: This research project focuses on developing and applying amplitude models to analyze data from the GlueX experiment, specifically targeting $N^*$ and $K^*$ resonances.
+Current long-term plan: This research project focuses on developing and applying amplitude models to analyze data from the GlueX experiment, specifically targeting $N^\*$ and $K^\*$ resonances.
