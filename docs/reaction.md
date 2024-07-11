@@ -1,4 +1,4 @@
-# Reaction and Models
+# $p \gamma \to \eta \pi^0 p$ reaction and models
 
 <!-- cspell:ignore Mathieu -->
 <!-- This amplitude model is adapted from the [Lecture 11 in STRONG2020 HaSP School](https://indico.ific.uv.es/event/6803/contributions/21223/) by Vincent Mathieu. -->
@@ -48,25 +48,25 @@ The choice of the amplitude model (equations (1) and (2)) for PWA in this tutori
 :::
 
 :::{important}
-The spin of $\eta$ meson and $\pi^0$ meson are all 0. But the spin of proton is not 0, it is spin-$\frac{1}{2}$.
+While the **spin** of the $\eta$ meson and the $\pi^0$ meson are both $0$, the spin of the proton is spin-$\frac{1}{2}$.
+However, in order to simplify the amplitude model, we treat the proton as a spin-0 particle.
+Overall, the $\eta$, $\pi^0$ and $p$ are therefore all treated as spin-0 particles.
 
-In this amplitude model **spin** of baryon is simplified (not realistic):
-$\eta$, $\pi^0$ and $p$ are all treated as spin-0 particles.
+The primary motivation for assuming proton to be spin-$0$ is to avoid the necessity of aligning the amplitudes (see e.g. [ComPWA/ampform#6](https://github.com/ComPWA/ampform/issues/6)).
+This assumption enables the intensity $I$ to be written as a coherent sum of the amplitudes of the subsystems without the need for additional Wigner rotations.
+In addition, the amplitude for each decay chain contains only one spherical harmonic, namely that of the resonance.
 
-This means that total intrinsic spin $s$ is ignored in this model,
-the total angular momentum
-$J$ of the system or any subsystems within this model will solely depend on the orbital angular momentum
-$L$, characterized by quantum number $l$.
-And this simplifies the use of spherical harmonics $Y_l^m(\theta,\phi)$,
-since only the orbital angular momentum component is involved, and thus the combination of contribution is not considered (e.g. Clebsch-Gordan Coefficients).
+The spherical harmonics in Equation&nbsp;{eq}`BW_SH_label` are therefore relevant only to the resonances.
+Here, $l$ represents the spin of the resonances and $m$ represents its spin projection in the decay chain.
+The total angular momentum and coupled spin (for the two-body state of the two decay products of the resonance) are not considered.
+According to {cite}`Richman:1984gh` and other classical references on helicity, this is known as the **helicity basis**.
+In contrast, the **canonical basis** does not sum over $L$ and $S$, resulting in a more complex coherent sum of amplitudes.
+The transformation between these bases is also discussed [here](https://ampform.rtfd.io/0.15.x/usage/helicity/formalism.html) on the AmpForm website.
 
 In our case:
 
-- $A^{12}$ amplitude represents a d-wave interaction, as indicated by $l=2$.
-  - The possible $m$ values are $−2,−1,0,1,2$. Each of these values corresponds to different orientations of the d-wave. The wave type is solely determined by $l$ and all these $m$ values still describe d-wave characteristics.
-- $A^{23}$ amplitude represents a p-wave interaction, as indicated by $l=1$.
-  - The possible $m$ values are $−1,0,1$. Each of these values corresponds to different orientations of the p-wave. Similarly, these values are all p-wave orientations.
-- $A^{31}$ amplitude represents a s-wave interaction, as indicated by $l=0$.
-  - The only possible $m$ value is 0, which is consistent with the spherical symmetry of s-waves.
+- $A^{12}$ represents a **d-wave** interaction, because we assume there is a $a_2$ resonance (spin&nbsp;2) in this subsystem. The possible $m$&nbsp;values are $−2,−1,0,1,2$. Each of these values corresponds to different orientations of the d-wave.
+- $A^{23}$ represents a **p-wave** interaction, because we assume this subsystem has a (spin-1) $\Delta^+$ resonance. The possible $m$&nbsp;values are $−1,0,1$.
+- $A^{31}$ represents an **s-wave** interaction, because we assume there is one spin-0 $N^*$ resonance in this subsystem. The only possible $m$ value is 0 and, since $Y_0^0=0$, the amplitude only consists of a Breit–Wigner.
 
 :::
