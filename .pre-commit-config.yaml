@@ -11,6 +11,11 @@ repos:
       - id: end-of-file-fixer
       - id: trailing-whitespace
 
+  - repo: https://github.com/ComPWA/policy
+    rev: 0.3.10
+    hooks:
+      - id: fix-nbformat-version
+
   - repo: https://github.com/kynan/nbstripout
     rev: 0.7.1
     hooks:
