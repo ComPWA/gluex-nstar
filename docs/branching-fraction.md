@@ -4,21 +4,21 @@ From [PDG Live](https://pdglive.lbl.gov).
 
 ## $N^*$ baryons
 
-### Branching fraction of $N(1440)$ to
+### $N(1440)$
 
 | Mode    | Fraction |
 | ------- | -------- |
 | $N\pi$  | 55 - 75% |
 | $N\eta$ | <1%      |
 
-### Branching fraction of $N(1520)$ to
+### $N(1520)$
 
 | Mode    | Fraction     |
 | ------- | ------------ |
 | $N\pi$  | 55 - 65%     |
 | $N\eta$ | 0.07 - 0.09% |
 
-### Branching fraction of $N(1535)$ to
+### $N(1535)$
 
 | Mode    | Fraction |
 | ------- | -------- |
@@ -27,7 +27,7 @@ From [PDG Live](https://pdglive.lbl.gov).
 
 ## $\Delta^*$ baryons
 
-### Branching fraction of $\Delta(1232)$ to
+### $\Delta(1232)$
 
 | Mode    | Fraction   |
 | ------- | ---------- |
