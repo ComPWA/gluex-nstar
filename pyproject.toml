@@ -4,6 +4,7 @@ ignore = [
     "D203",
     "D213",
 ]
+preview = true
 select = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
