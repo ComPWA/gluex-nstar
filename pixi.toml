@@ -75,3 +75,6 @@ sphinx-autobuild \
     docs/ docs/_build/html
 """
 env = {EXECUTE_NB = "yes"}
+
+[tasks.lab]
+cmd = "jupyter lab docs"
