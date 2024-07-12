@@ -20,4 +20,5 @@ symbolics
 pgamma-state
 branching-fraction
 ampform/etapi0p
+ampform/LambdaKpi0
 ```
