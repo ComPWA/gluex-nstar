@@ -4,11 +4,12 @@ comments_config = {
     "hypothesis": True,
 }
 exclude_patterns = [
-    "**.ipynb_checkpoints",
+    "_build",
     ".DS_Store",
     ".pixi",
+    ".virtual_documents",
+    "**.ipynb_checkpoints",
     "Thumbs.db",
-    "_build",
 ]
 extensions = [
     "myst_nb",
