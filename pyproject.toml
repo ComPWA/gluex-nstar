@@ -9,6 +9,8 @@ select = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
 "*.ipynb" = [
+    "D103",
+    "E501",
     "T201",
 ]
 "docs/conf.py" = [
