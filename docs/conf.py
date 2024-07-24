@@ -15,7 +15,6 @@ extensions = [
     "myst_nb",
     "sphinx_comments",
     "sphinx_copybutton",
-    "sphinx.ext.mathjax",
 ]
 html_theme = "sphinx_book_theme"
 master_doc = "index"
