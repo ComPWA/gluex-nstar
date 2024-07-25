@@ -1,5 +1,7 @@
 [tool.ruff.lint]
 ignore = [
+    "ANN001",
+    "ANN201",
     "CPY001",
     "D203",
     "D213",
