@@ -117,7 +117,9 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/importlib_metadata-8.0.0-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/importlib_resources-6.4.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipykernel-6.29.5-pyh3099207_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/ipympl-0.9.4-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipython-8.26.0-pyh707e725_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/ipython_genutils-0.2.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipywidgets-8.1.3-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/isoduration-20.11.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/isort-5.13.2-pyhd8ed1ab_0.conda
@@ -2335,6 +2337,28 @@ packages:
   size: 119084
   timestamp: 1719845605084
 - kind: conda
+  name: ipympl
+  version: 0.9.4
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/ipympl-0.9.4-pyhd8ed1ab_0.conda
+  sha256: db2a3eae629209d5e61d1443e5a12c6563f82b08aaf74810e76763eed5d71a28
+  md5: efef6deea063ef5612376b62b857ad7f
+  depends:
+  - ipython <9
+  - ipython_genutils
+  - ipywidgets >=7.6.0,<9
+  - matplotlib-base >=2.2.0,<4
+  - numpy
+  - pillow
+  - python >=3.6
+  - traitlets <6
+  license: BSD-3-Clause
+  license_family: BSD
+  size: 213574
+  timestamp: 1713251745934
+- kind: conda
   name: ipython
   version: 8.26.0
   build: pyh707e725_0
@@ -2361,6 +2385,22 @@ packages:
   license_family: BSD
   size: 599279
   timestamp: 1719582627972
+- kind: conda
+  name: ipython_genutils
+  version: 0.2.0
+  build: pyhd8ed1ab_1
+  build_number: 1
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/ipython_genutils-0.2.0-pyhd8ed1ab_1.conda
+  sha256: 72fbbe8bc511f20268d347c1a06e279128237e096c4c174b2f9164a661c6b13e
+  md5: f8ed9f18dce81e4ee55c858cc2f8548a
+  depends:
+  - python >=2.7
+  license: BSD-3-Clause
+  license_family: BSD
+  size: 28064
+  timestamp: 1716278507729
 - kind: conda
   name: ipywidgets
   version: 8.1.3
