@@ -51,6 +51,9 @@ sphinx-build \
 [tasks.doclive]
 cmd = """
 sphinx-autobuild \
+    --re-ignore '.*/_build/.*' \
+    --re-ignore '.*/.ipynb_checkpoints/.*' \
+    --re-ignore '.*/.virtual_documents/.*' \
     --watch docs \
     -nW --keep-going \
     -b html \
@@ -69,6 +72,9 @@ env = {EXECUTE_NB = "yes"}
 [tasks.docnblive]
 cmd = """
 sphinx-autobuild \
+    --re-ignore '.*/_build/.*' \
+    --re-ignore '.*/.ipynb_checkpoints/.*' \
+    --re-ignore '.*/.virtual_documents/.*' \
     --watch docs \
     -nW --keep-going \
     -b html \
