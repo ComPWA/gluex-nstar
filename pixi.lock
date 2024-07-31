@@ -37,6 +37,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/cached-property-1.5.2-hd8ed1ab_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/cached_property-1.5.2-pyha770c72_1.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/cairo-1.18.0-hbb29018_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/cattrs-23.2.3-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/certifi-2024.7.4-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/cffi-1.16.0-py312hf06ca03_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/cfgv-3.3.1-pyhd8ed1ab_0.tar.bz2
@@ -216,6 +217,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libxml2-2.12.7-h4c95cb1_3.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.1-h4ab18f5_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/livereload-2.7.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/lsprotocol-2023.0.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/lz4-c-1.9.4-hcb278e6_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/markdown-3.6-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/markdown-it-py-3.0.0-pyhd8ed1ab_0.conda
@@ -302,6 +304,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-graphviz-0.20.3-pyh717bed2_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-json-logger-2.0.7-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-lsp-jsonrpc-1.1.2-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/python-lsp-ruff-2.2.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-lsp-server-1.11.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-lsp-server-base-1.11.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-tzdata-2024.1-pyhd8ed1ab_0.conda
@@ -963,6 +966,24 @@ packages:
   license: LGPL-2.1-only or MPL-1.1
   size: 984224
   timestamp: 1718985592664
+- kind: conda
+  name: cattrs
+  version: 23.2.3
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/cattrs-23.2.3-pyhd8ed1ab_0.conda
+  sha256: 7fbcf6487856c4b777926112dccc3385cbd2eeae181825f77eed261abe83c1df
+  md5: 91fc4700dcce4a46d439900a132fe4e5
+  depends:
+  - attrs >=23.1.0
+  - exceptiongroup >=1.1.1
+  - python >=3.8
+  - typing-extensions >=4.1.0,!=4.6.3
+  license: MIT
+  license_family: MIT
+  size: 46839
+  timestamp: 1701406559435
 - kind: conda
   name: certifi
   version: 2024.7.4
@@ -4115,6 +4136,23 @@ packages:
   size: 25951
   timestamp: 1719215280117
 - kind: conda
+  name: lsprotocol
+  version: 2023.0.1
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/lsprotocol-2023.0.1-pyhd8ed1ab_0.conda
+  sha256: 163564614a24807504dc33a9ddeb470d511f900f62aa84e323d651ef6d26086d
+  md5: 9a540725973d27fc0b4101585a8fdfa8
+  depends:
+  - attrs >=21.3.0
+  - cattrs !=23.2.1
+  - python >=3.7
+  license: MIT
+  license_family: MIT
+  size: 149766
+  timestamp: 1705848568096
+- kind: conda
   name: lz4-c
   version: 1.9.4
   build: hcb278e6_0
@@ -5639,6 +5677,26 @@ packages:
   license_family: MIT
   size: 13984
   timestamp: 1695528516444
+- kind: conda
+  name: python-lsp-ruff
+  version: 2.2.2
+  build: pyhd8ed1ab_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/python-lsp-ruff-2.2.2-pyhd8ed1ab_0.conda
+  sha256: a2070bb36adbeb3f9e0a10fdeac733c28080b3d9d7da1eb438964d93b6b3dda6
+  md5: 88dd2ba636f32b8522c0a72c12496705
+  depends:
+  - cattrs !=23.2.1
+  - lsprotocol >=2023.0.1
+  - python >=3.8
+  - python-lsp-server-base
+  - ruff >=0.2.0
+  - tomli >=1.1.0
+  license: MIT
+  license_family: MIT
+  size: 19702
+  timestamp: 1721143940122
 - kind: conda
   name: python-lsp-server
   version: 1.11.0
