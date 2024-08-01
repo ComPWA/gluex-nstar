@@ -10,6 +10,7 @@ readme = "README.md"
 [dependencies]
 graphviz = "*"
 python = "*"
+tensorflow = "*"
 
 [pypi-dependencies]
 ampform = "*"
