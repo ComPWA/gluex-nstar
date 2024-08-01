@@ -9,6 +9,7 @@ readme = "README.md"
 
 [dependencies]
 graphviz = "*"
+jaxlib = "*"
 python = "*"
 tensorflow = "*"
 
