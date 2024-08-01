@@ -47,6 +47,7 @@ platforms = ["linux-64"]
 graphviz = "*"
 jaxlib = "*"
 python = "*"
+python-graphviz = "*"
 tensorflow = "*"
 
 [tool.pixi.tasks.doc]
