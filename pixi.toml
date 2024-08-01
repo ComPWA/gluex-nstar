@@ -9,13 +9,10 @@ readme = "README.md"
 
 [dependencies]
 ampform = "*"
-black = "*"
 graphviz = "*"
 ipywidgets = "*"
-isort = "*"
 jax = "*"
 jaxlib = "*"
-jupyter = "*"
 jupyterlab = "*"
 jupyterlab-git = "*"
 jupyterlab-lsp = "*"
@@ -24,14 +21,15 @@ jupyterlab_code_formatter = "*"
 matplotlib = "*"
 myst-nb = "*"
 numpy = "*"
+pandas = "*"
 phasespace = "*"
 pre-commit = "*"
-pydata-sphinx-theme = "*"
 python = "*"
 python-graphviz = "*"
+python-lsp-ruff = "*"
 python-lsp-server = "*"
 qrules = "*"
-scipy = "*"
+ruff = "*"
 sphinx-autobuild = "*"
 sphinx-book-theme = "*"
 sphinx-comments = "*"
@@ -51,6 +49,9 @@ sphinx-build \
 [tasks.doclive]
 cmd = """
 sphinx-autobuild \
+    --re-ignore '.*/_build/.*' \
+    --re-ignore '.*/.ipynb_checkpoints/.*' \
+    --re-ignore '.*/.virtual_documents/.*' \
     --watch docs \
     -nW --keep-going \
     -b html \
@@ -69,6 +70,9 @@ env = {EXECUTE_NB = "yes"}
 [tasks.docnblive]
 cmd = """
 sphinx-autobuild \
+    --re-ignore '.*/_build/.*' \
+    --re-ignore '.*/.ipynb_checkpoints/.*' \
+    --re-ignore '.*/.virtual_documents/.*' \
     --watch docs \
     -nW --keep-going \
     -b html \
