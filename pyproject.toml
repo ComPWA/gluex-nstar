@@ -97,8 +97,6 @@ cmd = "jupyter lab docs"
 
 [tool.ruff.lint]
 ignore = [
-    "ANN001",
-    "ANN201",
     "CPY001",
     "D203",
     "D213",
@@ -108,6 +106,7 @@ select = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
 "*.ipynb" = [
+    "ANN",
     "B018",
     "D100",
     "D103",
