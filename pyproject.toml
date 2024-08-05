@@ -7,6 +7,7 @@ authors = [{name = "Vitor Shen"}]
 dependencies = [
     "ampform",
     "graphviz",
+    "ipympl",
     "ipywidgets",
     "jax",
     "jaxlib",
@@ -95,6 +96,9 @@ env = {EXECUTE_NB = "yes"}
 [tool.pixi.tasks.lab]
 cmd = "jupyter lab docs"
 
+[tool.ruff]
+preview = true
+
 [tool.ruff.lint]
 ignore = [
     "CPY001",
@@ -112,6 +116,7 @@ select = ["ALL"]
     "D103",
     "E303",
     "E501",
+    "PLW0603",
     "T201",
 ]
 "docs/conf.py" = [
