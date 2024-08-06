@@ -96,6 +96,9 @@ env = {EXECUTE_NB = "yes"}
 [tool.pixi.tasks.lab]
 cmd = "jupyter lab docs"
 
+[tool.ruff]
+preview = true
+
 [tool.ruff.lint]
 ignore = [
     "CPY001",
