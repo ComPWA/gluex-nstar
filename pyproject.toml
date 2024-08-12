@@ -118,6 +118,7 @@ select = ["ALL"]
     "E501",
     "PLR2004",
     "PLW0603",
+    "S101",
     "T201",
 ]
 "docs/conf.py" = [
