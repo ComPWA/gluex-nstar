@@ -17,6 +17,9 @@ extensions = [
     "sphinx_copybutton",
 ]
 html_theme = "sphinx_book_theme"
+html_theme_options = {
+    "collapse_navigation": False,
+}
 master_doc = "index"
 myst_enable_extensions = [
     "amsmath",
