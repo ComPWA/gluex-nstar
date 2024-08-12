@@ -1,4 +1,4 @@
-# Symbolic Amplitude Models with $N^*$ Resonances at GlueX
+# $\Lambda K^+ \pi^0 $
 
 > [!NOTE]
 > This repository is under active development.
@@ -12,10 +12,6 @@ We are doing amplitude analysis and Partial Wave Analysis (PWA) with [CAS-assist
 
 Current long-term plan: This research project focuses on developing and applying amplitude models to analyze data from the GlueX experiment, specifically targeting $N^\*$ and $K^\*$ resonances.
 
-# Table of contents:
-
 ```{toctree}
-branching-fraction
-lambda-k-pi/index
-eta-pi-p/index
+automated
 ```
