@@ -3,6 +3,11 @@ ci:
   autoupdate_schedule: quarterly
 
 repos:
+  - repo: meta
+    hooks:
+      - id: check-hooks-apply
+      - id: check-useless-excludes
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
@@ -16,6 +21,17 @@ repos:
     hooks:
       - id: fix-nbformat-version
       - id: remove-empty-tags
+
+  - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+    rev: 2.7.3
+    hooks:
+      - id: editorconfig-checker
+        name: editorconfig
+        alias: ec
+        exclude: >-
+          (?x)^(
+            .*\.py
+          )$
 
   - repo: https://github.com/kynan/nbstripout
     rev: 0.7.1
