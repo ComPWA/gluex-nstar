@@ -23,6 +23,13 @@ html_logo = (
 html_theme = "sphinx_book_theme"
 html_theme_options = {
     "announcement": "This repository is under active development.",
+    "launch_buttons": {
+        "binderhub_url": "https://mybinder.org",
+        "colab_url": "https://colab.research.google.com",
+        "deepnote_url": "https://deepnote.com",
+        "notebook_interface": "jupyterlab",
+        "thebe": True,
+    },
     "path_to_docs": "docs",
     "repository_branch": "main",
     "repository_url": "https://github.com/ComPWA/gluex-nstar",
