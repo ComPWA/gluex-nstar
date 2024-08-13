@@ -1,17 +1,9 @@
 {
-  "[bibtex]": {
-    "editor.formatOnSave": false
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[git-commit]": {
-    "editor.rulers": [72],
-    "rewrap.wrappingColumn": 72
+    "editor.rulers": [72]
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.wordWrap": "on"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
