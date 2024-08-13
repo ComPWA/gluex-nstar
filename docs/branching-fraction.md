@@ -1,4 +1,4 @@
-# Branching fraction tables
+# Branching fractions
 
 From [PDG Live](https://pdglive.lbl.gov).
 

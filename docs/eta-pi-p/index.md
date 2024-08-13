@@ -1,4 +1,4 @@
-# $\eta \pi^0 p$
+# pγ→ηπ⁰p
 
 ## Amplitude Analysis 101 / PWA101 (v2.0)
 

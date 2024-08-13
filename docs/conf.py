@@ -1,5 +1,6 @@
 import os
 
+author = "ComPWA"
 comments_config = {
     "hypothesis": True,
 }

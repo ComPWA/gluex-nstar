@@ -1,7 +1,4 @@
-# $\Lambda K^+ \pi^0 $
-
-> [!NOTE]
-> This repository is under active development.
+# pγ → ΛK⁺π⁰
 
 We are doing amplitude analysis and Partial Wave Analysis (PWA) with [CAS-assisted model building](https://compwa.github.io/symbolics), which is a techniqued employed in the ComPWA project.
 
