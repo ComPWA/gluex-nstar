@@ -58,6 +58,7 @@ sphinx-build \
     -b html \
     docs/ docs/_build/html
 """
+env = {PYTHONWARNINGS = ""}
 
 [tool.pixi.tasks.doclive]
 cmd = """
@@ -70,6 +71,7 @@ sphinx-autobuild \
     -b html \
     docs/ docs/_build/html
 """
+env = {PYTHONWARNINGS = ""}
 
 [tool.pixi.tasks.docnb]
 cmd = "pixi run doc"
