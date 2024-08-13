@@ -22,6 +22,7 @@ html_logo = (
 )
 html_theme = "sphinx_book_theme"
 html_theme_options = {
+    "announcement": "This repository is under active development.",
     "path_to_docs": "docs",
     "repository_branch": "main",
     "repository_url": "https://github.com/ComPWA/gluex-nstar",
