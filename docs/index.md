@@ -1,5 +1,8 @@
 # Symbolic Amplitude Models with $N^*$ Resonances at GlueX
 
+:::{title} Welcome
+:::
+
 We are doing amplitude analysis and Partial Wave Analysis (PWA) with [CAS-assisted model building](https://compwa.github.io/symbolics), which is a technique employed in the ComPWA project.
 
 - One demonstration example is:<br>
