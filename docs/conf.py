@@ -1,5 +1,8 @@
 import os
 
+ORGANIZATION = "ComPWA"
+REPO_NAME = "gluex-nstar"
+
 author = "ComPWA"
 comments_config = {
     "hypothesis": True,
@@ -33,18 +36,18 @@ html_theme_options = {
         },
         {
             "name": "GitHub",
-            "url": "https://github.com/compwa/gluex-nstar",
+            "url": f"https://github.com/{ORGANIZATION}/{REPO_NAME}",
             "icon": "fa-brands fa-github",
         },
         {
             "name": "Launch on Binder",
-            "url": "https://mybinder.org/v2/gh/compwa/gluex-nstar/main?filepath=docs",
+            "url": f"https://mybinder.org/v2/gh/{ORGANIZATION}/{REPO_NAME}/main?filepath=docs",
             "icon": "https://mybinder.readthedocs.io/en/latest/_static/favicon.png",
             "type": "url",
         },
         {
             "name": "Launch on Colaboratory",
-            "url": "https://colab.research.google.com/github/compwa/gluex-nstar/blob/main",
+            "url": f"https://colab.research.google.com/github/{ORGANIZATION}/{REPO_NAME}/blob/main",
             "icon": "https://avatars.githubusercontent.com/u/33467679?s=100",
             "type": "url",
         },
@@ -58,7 +61,7 @@ html_theme_options = {
     "logo": {"text": "Symbolic Amplitudes<br>for Light Baryons"},
     "path_to_docs": "docs",
     "repository_branch": "main",
-    "repository_url": "https://github.com/ComPWA/gluex-nstar",
+    "repository_url": f"https://github.com/{ORGANIZATION}/{REPO_NAME}",
     "show_navbar_depth": 2,
     "show_toc_level": 2,
     "use_download_button": False,
