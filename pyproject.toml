@@ -101,9 +101,11 @@ preview = true
 
 [tool.ruff.lint]
 ignore = [
+    "COM812",
     "CPY001",
     "D203",
     "D213",
+    "ISC001",
 ]
 preview = true
 select = ["ALL"]
