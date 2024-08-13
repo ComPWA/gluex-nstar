@@ -1,0 +1,48 @@
+{
+  "[git-commit]": {
+    "editor.rulers": [72]
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.rulers": [88]
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.experimental.showMoves": true,
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "**/pixi.lock": "yaml"
+  },
+  "git.rebaseWhenSync": true,
+  "github-actions.workflows.pinned.refresh.enabled": true,
+  "github-actions.workflows.pinned.workflows": [
+    ".github/workflows/ci-docs.yml"
+  ],
+  "gitlens.telemetry.enabled": false,
+  "livePreview.defaultPreviewPath": "docs/_build/html",
+  "multiDiffEditor.experimental.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.organizeImports": "explicit"
+  },
+  "notebook.formatOnSave.enabled": true,
+  "notebook.gotoSymbols.showAllSymbols": true,
+  "python.terminal.activateEnvironment": false,
+  "redhat.telemetry.enabled": false,
+  "ruff.enable": true,
+  "ruff.importStrategy": "fromEnvironment",
+  "ruff.organizeImports": true,
+  "telemetry.telemetryLevel": "off"
+}

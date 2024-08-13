@@ -58,6 +58,7 @@ sphinx-build \
     -b html \
     docs/ docs/_build/html
 """
+env = {PYTHONWARNINGS = ""}
 
 [tool.pixi.tasks.doclive]
 cmd = """
@@ -70,27 +71,14 @@ sphinx-autobuild \
     -b html \
     docs/ docs/_build/html
 """
+env = {PYTHONWARNINGS = ""}
 
 [tool.pixi.tasks.docnb]
-cmd = """
-sphinx-build \
-    -nW --keep-going \
-    -b html \
-    docs/ docs/_build/html
-"""
+cmd = "pixi run doc"
 env = {EXECUTE_NB = "yes"}
 
 [tool.pixi.tasks.docnblive]
-cmd = """
-sphinx-autobuild \
-    --re-ignore '.*/_build/.*' \
-    --re-ignore '.*/.ipynb_checkpoints/.*' \
-    --re-ignore '.*/.virtual_documents/.*' \
-    --watch docs \
-    -nW --keep-going \
-    -b html \
-    docs/ docs/_build/html
-"""
+cmd = "pixi run doclive"
 env = {EXECUTE_NB = "yes"}
 
 [tool.pixi.tasks.lab]
@@ -109,6 +97,9 @@ ignore = [
 ]
 preview = true
 select = ["ALL"]
+
+[tool.ruff.lint.flake8-builtins]
+builtins-ignorelist = ["display"]
 
 [tool.ruff.lint.per-file-ignores]
 "*.ipynb" = [

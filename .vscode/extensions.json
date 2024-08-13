@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "charliermarsh.ruff",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "executablebookproject.myst-highlight",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
+    "mhutchie.git-graph",
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-vscode.live-server",
+    "ms-vsliveshare.vsliveshare",
+    "redhat.vscode-yaml",
+    "simonsiefke.svg-preview",
+    "tamasfe.even-better-toml",
+    "yzhang.markdown-all-in-one"
+  ]
+}
