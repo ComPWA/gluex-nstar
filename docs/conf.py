@@ -29,7 +29,6 @@ html_theme_options = {
         "colab_url": "https://colab.research.google.com",
         "deepnote_url": "https://deepnote.com",
         "notebook_interface": "jupyterlab",
-        "thebe": True,
     },
     "path_to_docs": "docs",
     "repository_branch": "main",
