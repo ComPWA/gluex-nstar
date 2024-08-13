@@ -17,7 +17,7 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/ComPWA/policy
-    rev: 0.3.10
+    rev: 0.3.18
     hooks:
       - id: fix-nbformat-version
       - id: remove-empty-tags
@@ -63,7 +63,7 @@ repos:
           - --in-place
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.5.5
+    rev: v0.5.7
     hooks:
       - id: ruff
         args: [--fix]
