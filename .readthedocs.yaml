@@ -3,6 +3,8 @@ build:
   os: "ubuntu-22.04"
   tools:
     python: mambaforge-latest
+  environment:
+    NO_COLOR: "1"
   commands:
     - mamba install -c conda-forge -c nodefaults pixi
     - pixi install
