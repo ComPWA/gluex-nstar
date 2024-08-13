@@ -49,6 +49,10 @@ repos:
     rev: v4.0.0-alpha.8
     hooks:
       - id: prettier
+        exclude: >-
+          (?x)^(
+            .*\.ipynb
+          )$
 
   - repo: https://github.com/redeboer/taplo-pre-commit
     rev: 0.9.1rc1
