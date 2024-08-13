@@ -26,7 +26,7 @@ html_logo = (
 html_favicon = "_static/favicon.ico"
 html_theme = "sphinx_book_theme"
 html_theme_options = {
-    "announcement": "This repository is under active development.",
+    "announcement": "⚠️ This repository is under active development ⚠️",
     "icon_links": [
         {
             "name": "Common Partial Wave Analysis",
