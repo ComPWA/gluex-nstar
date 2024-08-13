@@ -18,7 +18,8 @@ extensions = [
 ]
 html_theme = "sphinx_book_theme"
 html_theme_options = {
-    "collapse_navigation": False,
+    "show_navbar_depth": 2,
+    "show_toc_level": 2,
 }
 master_doc = "index"
 myst_enable_extensions = [
