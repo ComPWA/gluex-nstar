@@ -20,6 +20,7 @@ extensions = [
 html_logo = (
     "https://raw.githubusercontent.com/ComPWA/ComPWA/04e5199/doc/images/logo.svg"
 )
+html_favicon = "_static/favicon.ico"
 html_theme = "sphinx_book_theme"
 html_theme_options = {
     "announcement": "This repository is under active development.",
