@@ -17,7 +17,9 @@ extensions = [
     "sphinx_comments",
     "sphinx_copybutton",
 ]
-html_logo = "_static/logo.svg"
+html_logo = (
+    "https://github.com/user-attachments/assets/5650480b-8bed-4fb2-9f2b-c43b12e16ac3"
+)
 html_favicon = "_static/favicon.ico"
 html_theme = "sphinx_book_theme"
 html_theme_options = {
@@ -53,7 +55,7 @@ html_theme_options = {
         "deepnote_url": "https://deepnote.com",
         "notebook_interface": "jupyterlab",
     },
-    "logo": {"text": "GlueX Symbolic N* Amplitudes"},
+    "logo": {"text": "Symbolic Amplitudes<br>for Light Baryons"},
     "path_to_docs": "docs",
     "repository_branch": "main",
     "repository_url": "https://github.com/ComPWA/gluex-nstar",
