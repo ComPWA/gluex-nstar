@@ -1,12 +1,5 @@
 import os
 
-from sphinx_api_relink.helpers import get_branch_name
-
-BRANCH = get_branch_name()
-ORGANIZATION = "ComPWA"
-REPO_NAME = "gluex-nstar"
-REPO_TITLE = "GlueX N-Star Documentation"
-
 comments_config = {
     "hypothesis": True,
 }
@@ -20,7 +13,6 @@ exclude_patterns = [
 ]
 extensions = [
     "myst_nb",
-    "sphinx_api_relink",
     "sphinx_comments",
     "sphinx_copybutton",
 ]
@@ -30,18 +22,17 @@ html_logo = (
 html_theme = "sphinx_book_theme"
 html_theme_options = {
     "path_to_docs": "docs",
-    "repository_branch": BRANCH,
-    "repository_url": f"https://github.com/{ORGANIZATION}/{REPO_NAME}",
+    "repository_branch": "main",
+    "repository_url": "https://github.com/ComPWA/gluex-nstar",
     "show_navbar_depth": 2,
     "show_toc_level": 2,
-    "use_download_button": True,
+    "use_download_button": False,
     "use_edit_page_button": True,
     "use_issues_button": True,
     "use_repository_button": True,
     "use_source_button": True,
 }
-html_title = REPO_TITLE
-master_doc = "index"
+html_title = "GlueX Symbolic N* Amplitudes"
 myst_enable_extensions = [
     "amsmath",
     "colon_fence",
