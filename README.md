@@ -1,4 +1,5 @@
 # Symbolic Amplitudes for Light Baryons
+
 ## Symbolic Amplitude Models with $N^*$ Resonances at GlueX
 
 > [!NOTE]
