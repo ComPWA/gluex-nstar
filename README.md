@@ -1,9 +1,10 @@
-# Symbolic Amplitude Models with $N^*$ Resonances at GlueX
+# Symbolic Amplitudes for Light Baryons
+## Symbolic Amplitude Models with $N^*$ Resonances at GlueX
 
 > [!NOTE]
 > This repository is under active development.
 
-We are doing amplitude analysis and Partial Wave Analysis (PWA) with [CAS-assisted model building](https://compwa.github.io/symbolics), which is a techniqued employed in the ComPWA project.
+We are doing amplitude analysis and Partial Wave Analysis (PWA) with [CAS-assisted model building](https://compwa.github.io/symbolics), which is a technique employed in the ComPWA project.
 
 - The first demonstration example is:<br>
   $p \gamma \to$ Resonances (e.g. N\*) $\to \eta \pi^0 p$
