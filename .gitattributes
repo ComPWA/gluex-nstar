@@ -1,4 +1,2 @@
-# GitHub syntax highlighting
+docs/**/* linguist-documentation=false
 pixi.lock linguist-language=YAML
-# Github doesn't recognize the docs folder as a documentation folder
-docs/* linguist-documentation=false
