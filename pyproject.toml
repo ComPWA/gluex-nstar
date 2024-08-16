@@ -114,6 +114,7 @@ builtins-ignorelist = ["display"]
     "PLW0603",
     "S101",
     "T201",
+    "TCH",
 ]
 "docs/conf.py" = [
     "D100",
