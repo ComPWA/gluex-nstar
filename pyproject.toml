@@ -110,6 +110,7 @@ builtins-ignorelist = ["display"]
     "D103",
     "E303",
     "E501",
+    "PLC2401",
     "PLR2004",
     "PLW0603",
     "S101",
