@@ -158,6 +158,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/8d/3f/95338030883d8c8b91223b4e21744b04d11b161a3ef117295d8241f50ab4/accessible_pygments-0.0.5-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/7e/b3/6b4067be973ae96ba0d615946e314c5ae35f9f993eca561b356540bb0c2b/alabaster-1.0.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/15/90/60468aaed8bb12b5bb0e8e100c95ff33c9d097d309e20fbe14b26406307b/ampform-0.15.4-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/9d/bd/8b662d1eabe1d920fc44db38551483ef450322ef0faefd413f9a0a094621/ampform_dpd-0.2.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/7b/a2/10639a79341f6c019dedc95bd48a4928eed9f1d1197f4c04f546fc7ae0ff/anyio-4.4.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/a4/6a/e8a041599e78b6b3752da48000b14c8d1e8a04ded09c88c714ba047f34f5/argon2_cffi-23.1.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ec/f7/378254e6dd7ae6f31fe40c8649eea7d4832a42243acaf0f1fff9083b2bed/argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
@@ -461,6 +462,69 @@ packages:
   - sphinx-api-relink>=0.0.3 ; extra == 'types'
   - graphviz ; extra == 'viz'
   requires_python: '>=3.7'
+- kind: pypi
+  name: ampform-dpd
+  version: 0.2.0
+  url: https://files.pythonhosted.org/packages/9d/bd/8b662d1eabe1d920fc44db38551483ef450322ef0faefd413f9a0a094621/ampform_dpd-0.2.0-py3-none-any.whl
+  sha256: b2e06a5efd900c2454168c2a24cde21dc319b95e7f77a6c74a24f48b0588bd65
+  requires_dist:
+  - ampform>=0.14.8
+  - attrs>=20.1.0
+  - cloudpickle
+  - qrules>=0.10.0
+  - sympy>=1.10
+  - tensorwaves[jax]
+  - ampform-dpd[doc] ; extra == 'dev'
+  - ampform-dpd[jupyter] ; extra == 'dev'
+  - ampform-dpd[sty] ; extra == 'dev'
+  - ampform-dpd[test] ; extra == 'dev'
+  - sphinx-autobuild ; extra == 'dev'
+  - tox>=1.9 ; extra == 'dev'
+  - graphviz ; extra == 'doc'
+  - ipympl ; extra == 'doc'
+  - ipywidgets ; extra == 'doc'
+  - matplotlib ; extra == 'doc'
+  - myst-nb>=0.14 ; extra == 'doc'
+  - sphinx-api-relink>=0.0.4 ; extra == 'doc'
+  - sphinx-book-theme ; extra == 'doc'
+  - sphinx-codeautolink[ipython] ; extra == 'doc'
+  - sphinx-copybutton ; extra == 'doc'
+  - sphinx-design ; extra == 'doc'
+  - sphinx-pybtex-etal-style ; extra == 'doc'
+  - sphinx-togglebutton ; extra == 'doc'
+  - sphinxcontrib-bibtex ; extra == 'doc'
+  - tensorwaves[phsp] ; extra == 'doc'
+  - tqdm ; extra == 'doc'
+  - tensorwaves[jax] ; extra == 'jax'
+  - ampform-dpd[doc] ; extra == 'jupyter'
+  - black ; extra == 'jupyter'
+  - isort ; extra == 'jupyter'
+  - jupyterlab>=3.0 ; extra == 'jupyter'
+  - jupyterlab ; extra == 'jupyter'
+  - jupyterlab-code-formatter ; extra == 'jupyter'
+  - jupyterlab-git ; extra == 'jupyter'
+  - jupyterlab-lsp ; extra == 'jupyter'
+  - jupyterlab-myst ; extra == 'jupyter'
+  - python-lsp-ruff ; extra == 'jupyter'
+  - python-lsp-server[rope] ; extra == 'jupyter'
+  - tensorwaves[numba] ; extra == 'numba'
+  - ampform-dpd[types] ; extra == 'sty'
+  - mypy ; extra == 'sty'
+  - pre-commit>=1.4.0 ; extra == 'sty'
+  - ruff ; extra == 'sty'
+  - ampform-dpd[tf] ; extra == 'tensorflow'
+  - nbmake ; extra == 'test'
+  - numpy ; extra == 'test'
+  - pytest>=6.0 ; extra == 'test'
+  - pytest-cov ; extra == 'test'
+  - pytest-xdist ; extra == 'test'
+  - tensorwaves[tf] ; extra == 'tf'
+  - docutils ; extra == 'types'
+  - pybtex ; extra == 'types'
+  - pytest ; extra == 'types'
+  - sphinx ; extra == 'types'
+  - sphinx-api-relink>=0.0.4 ; extra == 'types'
+  requires_python: '>=3.8'
 - kind: pypi
   name: anyio
   version: 4.4.0

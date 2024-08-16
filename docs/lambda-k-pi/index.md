@@ -1,5 +1,6 @@
 # pγ → ΛK⁺π⁰
 
 ```{toctree}
-automated
+ampform
+ampform-dpd
 ```

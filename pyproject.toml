@@ -6,6 +6,7 @@ requires = ["setuptools"]
 authors = [{name = "Vitor Shen"}]
 dependencies = [
     "ampform",
+    "ampform-dpd>=0.2.0,<0.3",
     "graphviz",
     "ipympl",
     "ipywidgets",
@@ -109,10 +110,12 @@ builtins-ignorelist = ["display"]
     "D103",
     "E303",
     "E501",
+    "PLC2401",
     "PLR2004",
     "PLW0603",
     "S101",
     "T201",
+    "TCH",
 ]
 "docs/conf.py" = [
     "D100",
