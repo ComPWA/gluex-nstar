@@ -19,7 +19,7 @@ Later on, attempts of automated amplitude model formualtion are done via e.g. `a
 
 ```{toctree}
 reaction-model
-pgamma-state
 manual
+pgamma-state
 automated
 ```
