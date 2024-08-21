@@ -102,15 +102,20 @@ select = ["ALL"]
 [tool.ruff.lint.flake8-builtins]
 builtins-ignorelist = ["display"]
 
+[tool.ruff.lint.isort]
+split-on-trailing-comma = false
+
 [tool.ruff.lint.per-file-ignores]
 "*.ipynb" = [
     "ANN",
     "B018",
-    "D100",
-    "D103",
+    "C408",
+    "D1",
     "E303",
     "E501",
+    "N806",
     "PLC2401",
+    "PLC2701",
     "PLR2004",
     "PLW0603",
     "S101",
