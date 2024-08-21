@@ -109,6 +109,7 @@ split-on-trailing-comma = false
 "*.ipynb" = [
     "ANN",
     "B018",
+    "C408",
     "D1",
     "E303",
     "E501",
