@@ -33,17 +33,16 @@ repos:
             .*\.py
           )$
 
-  - repo: https://github.com/kynan/nbstripout
-    rev: 0.7.1
+  - repo: https://github.com/srstevenson/nb-clean
+    rev: 3.3.0
     hooks:
-      - id: nbstripout
+      - id: nb-clean
         args:
-          - --extra-keys
-          - |
-            cell.attachments
-            cell.metadata.editable
-            cell.metadata.id
-            cell.metadata.slideshow
+          - --remove-empty-cells
+          - --preserve-cell-metadata
+          - tags
+          - slideshow
+          - --
 
   - repo: https://github.com/pre-commit/mirrors-prettier
     rev: v4.0.0-alpha.8
