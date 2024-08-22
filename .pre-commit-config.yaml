@@ -41,7 +41,8 @@ repos:
           - --remove-empty-cells
           - --preserve-cell-metadata
           - tags
-          - slideshow
+          - jupyter
+          - mystnb
           - --
 
   - repo: https://github.com/pre-commit/mirrors-prettier
