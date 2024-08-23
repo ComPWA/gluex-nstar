@@ -114,6 +114,7 @@ split-on-trailing-comma = false
     "E303",
     "E501",
     "N806",
+    "N816",
     "PLC2401",
     "PLC2701",
     "PLR2004",
