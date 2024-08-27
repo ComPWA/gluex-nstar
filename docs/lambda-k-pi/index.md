@@ -3,4 +3,5 @@
 ```{toctree}
 ampform
 ampform-dpd
+manual
 ```
