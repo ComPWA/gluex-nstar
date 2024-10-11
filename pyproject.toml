@@ -22,7 +22,7 @@ dependencies = [
     "numpy",
     "pandas",
     "phasespace",
-    "pre-commit",
+    "pre-commit-uv",
     "python-lsp-ruff",
     "python-lsp-server",
     "qrules",
