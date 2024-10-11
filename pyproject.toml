@@ -22,7 +22,7 @@ dependencies = [
     "numpy",
     "pandas",
     "phasespace",
-    "pre-commit",
+    "pre-commit-uv",
     "python-lsp-ruff",
     "python-lsp-server",
     "qrules",
@@ -38,7 +38,7 @@ dependencies = [
 license = {file = "LICENSE"}
 name = "gluex-nstar"
 readme = "README.md"
-requires-python = ">= 3.8"
+requires-python = ">= 3.9"
 version = "0.1.0"
 
 [tool.pixi.project]
