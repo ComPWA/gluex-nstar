@@ -10,7 +10,6 @@ comments_config = {
 exclude_patterns = [
     "_build",
     ".DS_Store",
-    ".pixi",
     ".virtual_documents",
     "**.ipynb_checkpoints",
     "Thumbs.db",
