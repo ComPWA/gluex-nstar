@@ -70,6 +70,9 @@ html_theme_options = {
     "use_source_button": True,
 }
 html_title = "GlueX Symbolic N* Amplitudes"
+linkcheck_ignore = [
+    "https://indico.ific.uv.es/event/6803",
+]
 myst_enable_extensions = [
     "amsmath",
     "colon_fence",
