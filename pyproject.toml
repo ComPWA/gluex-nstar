@@ -6,17 +6,12 @@ requires = ["setuptools"]
 authors = [{name = "Vitor Shen"}]
 dependencies = [
     "ampform",
-    "ampform-dpd>=0.2.0,<0.3",
+    "ampform-dpd",
     "graphviz",
     "ipympl",
     "ipywidgets",
     "jax",
     "jaxlib",
-    "jupyterlab",
-    "jupyterlab-code-formatter",
-    "jupyterlab-git",
-    "jupyterlab-lsp",
-    "jupyterlab-myst",
     "matplotlib",
     "myst-nb",
     "numpy",
@@ -38,69 +33,77 @@ dependencies = [
 license = {file = "LICENSE"}
 name = "gluex-nstar"
 readme = "README.md"
-requires-python = ">= 3.12"
+requires-python = ">=3.12"
 version = "0.1.0"
 
-[tool.pixi.project]
-channels = ["conda-forge"]
-platforms = ["linux-64"]
-
-[tool.pixi.dependencies]
-graphviz = "*"
-jaxlib = "*"
-python = "*"
-python-graphviz = "*"
-tensorflow = "*"
-
-[tool.pixi.tasks.doc]
-cmd = """
-sphinx-build \
-    -nW --keep-going \
-    -b html \
-    docs/ docs/_build/html
-"""
-env = {PYTHONWARNINGS = ""}
-
-[tool.pixi.tasks.doclive]
-cmd = """
-sphinx-autobuild \
-    --re-ignore '.*/_build/.*' \
-    --re-ignore '.*/.ipynb_checkpoints/.*' \
-    --re-ignore '.*/.virtual_documents/.*' \
-    --watch docs \
-    -nW --keep-going \
-    -b html \
-    docs/ docs/_build/html
-"""
-env = {PYTHONWARNINGS = ""}
-
-[tool.pixi.tasks.docnb]
-cmd = "pixi run doc"
-env = {EXECUTE_NB = "yes"}
-
-[tool.pixi.tasks.docnblive]
-cmd = "pixi run doclive"
-env = {EXECUTE_NB = "yes"}
-
-[tool.pixi.tasks.lab]
-cmd = "jupyter lab docs"
+[project.optional-dependencies]
+dev = [
+    "gluex-nstar[doc]",
+    "gluex-nstar[jupyter]",
+    "gluex-nstar[sty]",
+    "pre-commit-uv",
+]
+doc = [
+    "sphinx-autobuild",
+    "sphinx-book-theme",
+    "sphinx-comments",
+    "sphinx-copybutton",
+]
+jupyter = [
+    "jupyterlab",
+    "jupyterlab-code-formatter >=3.0.0",
+    "jupyterlab-git",
+    "jupyterlab-lsp",
+    "jupyterlab-myst",
+    "python-lsp-ruff",
+    "python-lsp-server[rope]",
+]
+sty = ["ruff"]
 
 [tool.ruff]
+extend-include = ["*.ipynb"]
 preview = true
+show-fixes = true
+
+[tool.ruff.format]
+docstring-code-format = true
+line-ending = "lf"
 
 [tool.ruff.lint]
 ignore = [
+    "ANN401",
     "COM812",
     "CPY001",
+    "D101",
+    "D102",
+    "D103",
+    "D105",
+    "D107",
     "D203",
     "D213",
+    "D407",
+    "D416",
+    "DOC",
+    "E501",
+    "FURB101",
+    "FURB103",
+    "FURB140",
+    "G004",
     "ISC001",
+    "PLW1514",
+    "PT001",
+    "PTH",
+    "SIM108",
 ]
 preview = true
 select = ["ALL"]
+task-tags = ["cspell"]
 
 [tool.ruff.lint.flake8-builtins]
 builtins-ignorelist = ["display"]
+
+[tool.ruff.lint.flake8-comprehensions]
+allow-dict-calls-with-keyword-arguments = true
 
 [tool.ruff.lint.isort]
 split-on-trailing-comma = false
@@ -110,24 +113,35 @@ split-on-trailing-comma = false
     "ANN",
     "B018",
     "C408",
-    "D1",
+    "C90",
+    "D",
     "E303",
-    "E501",
+    "E703",
     "N806",
     "N816",
     "PLC2401",
     "PLC2701",
+    "PLR09",
     "PLR2004",
+    "PLW0602",
     "PLW0603",
     "RUF001",
     "S101",
-    "T201",
+    "T20",
     "TCH",
+]
+"docs/*" = [
+    "INP001",
+    "S101",
+    "S113",
 ]
 "docs/conf.py" = [
     "D100",
     "INP001",
 ]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
 
 [tool.tomlsort]
 all = false
@@ -139,6 +153,5 @@ sort_first = [
     "tool.setuptools",
     "tool.setuptools_scm",
 ]
-sort_table_keys = true
 spaces_indent_inline_array = 4
 trailing_comma_inline_array = true

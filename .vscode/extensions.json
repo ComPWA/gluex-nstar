@@ -14,7 +14,21 @@
     "ms-vsliveshare.vsliveshare",
     "redhat.vscode-yaml",
     "simonsiefke.svg-preview",
+    "soulcode.vscode-unwanted-extensions",
+    "stkb.rewrap",
     "tamasfe.even-better-toml",
     "yzhang.markdown-all-in-one"
+  ],
+  "unwantedRecommendations": [
+    "bungcip.better-toml",
+    "davidanson.vscode-markdownlint",
+    "garaioag.garaio-vscode-unwanted-recommendations",
+    "ms-python.black-formatter",
+    "ms-python.flake8",
+    "ms-python.isort",
+    "ms-python.mypy-type-checker",
+    "ms-python.pylint",
+    "travisillig.vscode-json-stable-stringify",
+    "tyriar.sort-lines"
   ]
 }
