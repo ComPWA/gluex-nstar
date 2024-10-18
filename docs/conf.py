@@ -40,7 +40,7 @@ html_theme_options = {
         },
         {
             "name": "Launch on Binder",
-            "url": f"https://mybinder.org/v2/gh/{ORGANIZATION}/{REPO_NAME}/main?filepath=docs",
+            "url": f"https://mybinder.org/v2/gh/{ORGANIZATION}/{REPO_NAME}/main?urlpath=lab",
             "icon": "https://mybinder.readthedocs.io/en/latest/_static/favicon.png",
             "type": "url",
         },
