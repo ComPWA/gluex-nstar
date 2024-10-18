@@ -33,5 +33,6 @@ jobs:
       pages: write
       id-token: write
     with:
+      apt-packages: graphviz
       gh-pages: true
       specific-pip-packages: ${{ inputs.specific-pip-packages }}
