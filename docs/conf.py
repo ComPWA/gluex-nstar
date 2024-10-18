@@ -10,7 +10,6 @@ comments_config = {
 exclude_patterns = [
     "_build",
     ".DS_Store",
-    ".pixi",
     ".virtual_documents",
     "**.ipynb_checkpoints",
     "Thumbs.db",
@@ -41,7 +40,7 @@ html_theme_options = {
         },
         {
             "name": "Launch on Binder",
-            "url": f"https://mybinder.org/v2/gh/{ORGANIZATION}/{REPO_NAME}/main?filepath=docs",
+            "url": f"https://mybinder.org/v2/gh/{ORGANIZATION}/{REPO_NAME}/main?urlpath=lab",
             "icon": "https://mybinder.readthedocs.io/en/latest/_static/favicon.png",
             "type": "url",
         },
@@ -71,6 +70,9 @@ html_theme_options = {
     "use_source_button": True,
 }
 html_title = "GlueX Symbolic N* Amplitudes"
+linkcheck_ignore = [
+    "https://indico.ific.uv.es/event/6803",
+]
 myst_enable_extensions = [
     "amsmath",
     "colon_fence",
