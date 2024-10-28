@@ -7,26 +7,11 @@ authors = [{name = "Vitor Shen"}]
 dependencies = [
     "ampform",
     "ampform-dpd",
-    "graphviz",
     "ipympl",
     "ipywidgets",
-    "jax",
-    "jaxlib",
     "matplotlib",
-    "myst-nb",
-    "numpy",
-    "pandas",
-    "phasespace",
-    "python-lsp-ruff",
-    "python-lsp-server",
-    "qrules",
-    "sphinx-autobuild",
-    "sphinx-book-theme",
-    "sphinx-comments",
-    "sphinx-copybutton",
-    "sympy",
-    "tensorflow",
-    "tensorwaves",
+    "qrules[viz]",
+    "tensorwaves[jax,pwa]",
 ]
 license = {file = "LICENSE"}
 name = "gluex-nstar"
@@ -42,6 +27,7 @@ dev = [
     {include-group = "test"},
 ]
 doc = [
+    "myst-nb",
     "sphinx-autobuild",
     "sphinx-book-theme",
     "sphinx-comments",
