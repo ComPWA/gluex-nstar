@@ -618,7 +618,14 @@ notebooks = [
     { name = "tensorwaves", extra = ["jax", "pwa"] },
 ]
 test = [
+    { name = "ampform" },
+    { name = "ampform-dpd" },
+    { name = "ipympl" },
+    { name = "ipywidgets" },
+    { name = "matplotlib" },
     { name = "nbmake" },
+    { name = "qrules", extra = ["viz"] },
+    { name = "tensorwaves", extra = ["jax", "pwa"] },
 ]
 
 [package.metadata]
@@ -685,7 +692,16 @@ notebooks = [
     { name = "qrules", extras = ["viz"] },
     { name = "tensorwaves", extras = ["jax", "pwa"] },
 ]
-test = [{ name = "nbmake" }]
+test = [
+    { name = "ampform" },
+    { name = "ampform-dpd" },
+    { name = "ipympl" },
+    { name = "ipywidgets" },
+    { name = "matplotlib" },
+    { name = "nbmake" },
+    { name = "qrules", extras = ["viz"] },
+    { name = "tensorwaves", extras = ["jax", "pwa"] },
+]
 
 [[package]]
 name = "google-pasta"

@@ -44,7 +44,10 @@ notebooks = [
     "qrules[viz]",
     "tensorwaves[jax,pwa]",
 ]
-test = ["nbmake"]
+test = [
+    "nbmake",
+    {include-group = "notebooks"},
+]
 
 [tool.ruff]
 extend-include = ["*.ipynb"]
