@@ -191,6 +191,7 @@ setenv =
 [testenv:docnb]
 base = doc
 description = {[testenv:doc]description} with cached notebook execution
+passenv = *
 setenv =
     {[testenv:doc]setenv}
     EXECUTE_NB = yes
@@ -198,6 +199,7 @@ setenv =
 [testenv:docnb-force]
 base = doc
 description = {[testenv:doc]description} with notebook execution (no cache)
+passenv = *
 setenv =
     {[testenv:doc]setenv}
     FORCE_EXECUTE_NB = yes
@@ -237,6 +239,7 @@ setenv =
 [testenv:docnblive]
 base = doclive
 description = {[testenv:doclive]description} with cached notebook execution
+passenv = *
 setenv =
     {[testenv:doclive]setenv}
     EXECUTE_NB = yes
