@@ -4,62 +4,50 @@ requires = ["setuptools"]
 
 [project]
 authors = [{name = "Vitor Shen"}]
-dependencies = [
-    "ampform",
-    "ampform-dpd",
-    "graphviz",
-    "ipympl",
-    "ipywidgets",
-    "jax",
-    "jaxlib",
-    "matplotlib",
-    "myst-nb",
-    "numpy",
-    "pandas",
-    "phasespace",
-    "pre-commit-uv",
-    "python-lsp-ruff",
-    "python-lsp-server",
-    "qrules",
-    "ruff",
-    "sphinx-autobuild",
-    "sphinx-book-theme",
-    "sphinx-comments",
-    "sphinx-copybutton",
-    "sympy",
-    "tensorflow",
-    "tensorwaves",
-]
 license = {file = "LICENSE"}
 name = "gluex-nstar"
 readme = "README.md"
 requires-python = ">=3.12"
 version = "0.1.0"
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
-    "gluex-nstar[doc]",
-    "gluex-nstar[jupyter]",
-    "gluex-nstar[sty]",
-    "pre-commit-uv",
-    "tox",
+    "ruff",
+    "sphinx-autobuild",
+    {include-group = "doc"},
+    {include-group = "jupyter"},
+    {include-group = "test"},
 ]
 doc = [
-    "sphinx-autobuild",
+    "myst-nb",
     "sphinx-book-theme",
     "sphinx-comments",
     "sphinx-copybutton",
+    {include-group = "notebooks"},
 ]
 jupyter = [
     "jupyterlab",
-    "jupyterlab-code-formatter >=3.0.0",
+    "jupyterlab-code-formatter",
     "jupyterlab-git",
     "jupyterlab-lsp",
     "jupyterlab-myst",
     "python-lsp-ruff",
     "python-lsp-server[rope]",
+    {include-group = "notebooks"},
 ]
-sty = ["ruff"]
+notebooks = [
+    "ampform",
+    "ampform-dpd",
+    "ipympl",
+    "ipywidgets",
+    "matplotlib",
+    "qrules[viz]",
+    "tensorwaves[jax,pwa]",
+]
+test = [
+    "nbmake",
+    {include-group = "notebooks"},
+]
 
 [tool.ruff]
 extend-include = ["*.ipynb"]
@@ -192,6 +180,7 @@ setenv =
 [testenv:docnb]
 base = doc
 description = {[testenv:doc]description} with cached notebook execution
+passenv = *
 setenv =
     {[testenv:doc]setenv}
     EXECUTE_NB = yes
@@ -199,6 +188,7 @@ setenv =
 [testenv:docnb-force]
 base = doc
 description = {[testenv:doc]description} with notebook execution (no cache)
+passenv = *
 setenv =
     {[testenv:doc]setenv}
     FORCE_EXECUTE_NB = yes
@@ -238,6 +228,7 @@ setenv =
 [testenv:docnblive]
 base = doclive
 description = {[testenv:doclive]description} with cached notebook execution
+passenv = *
 setenv =
     {[testenv:doclive]setenv}
     EXECUTE_NB = yes
@@ -254,10 +245,17 @@ description = Check external links in the documentation (requires internet conne
 setenv =
     {[testenv:doclive]setenv}
 
+[testenv:nb]
+allowlist_externals =
+    pytest
+commands =
+    pytest --nbmake {posargs:docs}
+description = Run all notebooks with pytest
+
 [testenv:sty]
 allowlist_externals =
     pre-commit
 commands =
-    pre-commit run {posargs} --all-files
+    pre-commit run --all-files {posargs}
 description = Perform all linting, formatting, and spelling checks
 """
