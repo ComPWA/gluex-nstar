@@ -570,7 +570,6 @@ dependencies = [
     { name = "python-lsp-ruff" },
     { name = "python-lsp-server" },
     { name = "qrules" },
-    { name = "ruff" },
     { name = "sphinx-autobuild" },
     { name = "sphinx-book-theme" },
     { name = "sphinx-comments" },
@@ -580,7 +579,7 @@ dependencies = [
     { name = "tensorwaves" },
 ]
 
-[package.optional-dependencies]
+[package.dependency-groups]
 dev = [
     { name = "jupyterlab" },
     { name = "jupyterlab-code-formatter" },
@@ -611,9 +610,6 @@ jupyter = [
     { name = "python-lsp-ruff" },
     { name = "python-lsp-server", extra = ["rope"] },
 ]
-sty = [
-    { name = "ruff" },
-]
 test = [
     { name = "nbmake" },
 ]
@@ -622,45 +618,60 @@ test = [
 requires-dist = [
     { name = "ampform" },
     { name = "ampform-dpd" },
-    { name = "gluex-nstar", extras = ["doc"], marker = "extra == 'dev'" },
-    { name = "gluex-nstar", extras = ["jupyter"], marker = "extra == 'dev'" },
-    { name = "gluex-nstar", extras = ["sty"], marker = "extra == 'dev'" },
-    { name = "gluex-nstar", extras = ["test"], marker = "extra == 'dev'" },
     { name = "graphviz" },
     { name = "ipympl" },
     { name = "ipywidgets" },
     { name = "jax" },
     { name = "jaxlib" },
-    { name = "jupyterlab", marker = "extra == 'jupyter'" },
-    { name = "jupyterlab-code-formatter", marker = "extra == 'jupyter'", specifier = ">=3.0.0" },
-    { name = "jupyterlab-git", marker = "extra == 'jupyter'" },
-    { name = "jupyterlab-lsp", marker = "extra == 'jupyter'" },
-    { name = "jupyterlab-myst", marker = "extra == 'jupyter'" },
     { name = "matplotlib" },
     { name = "myst-nb" },
-    { name = "nbmake", marker = "extra == 'test'" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "phasespace" },
     { name = "python-lsp-ruff" },
-    { name = "python-lsp-ruff", marker = "extra == 'jupyter'" },
     { name = "python-lsp-server" },
-    { name = "python-lsp-server", extras = ["rope"], marker = "extra == 'jupyter'" },
     { name = "qrules" },
-    { name = "ruff" },
-    { name = "ruff", marker = "extra == 'sty'" },
     { name = "sphinx-autobuild" },
-    { name = "sphinx-autobuild", marker = "extra == 'doc'" },
     { name = "sphinx-book-theme" },
-    { name = "sphinx-book-theme", marker = "extra == 'doc'" },
     { name = "sphinx-comments" },
-    { name = "sphinx-comments", marker = "extra == 'doc'" },
     { name = "sphinx-copybutton" },
-    { name = "sphinx-copybutton", marker = "extra == 'doc'" },
     { name = "sympy" },
     { name = "tensorflow" },
     { name = "tensorwaves" },
 ]
+
+[package.metadata.dependency-groups]
+dev = [
+    { name = "jupyterlab" },
+    { name = "jupyterlab-code-formatter" },
+    { name = "jupyterlab-git" },
+    { name = "jupyterlab-lsp" },
+    { name = "jupyterlab-myst" },
+    { name = "nbmake" },
+    { name = "python-lsp-ruff" },
+    { name = "python-lsp-server", extras = ["rope"] },
+    { name = "ruff" },
+    { name = "sphinx-autobuild" },
+    { name = "sphinx-book-theme" },
+    { name = "sphinx-comments" },
+    { name = "sphinx-copybutton" },
+]
+doc = [
+    { name = "sphinx-autobuild" },
+    { name = "sphinx-book-theme" },
+    { name = "sphinx-comments" },
+    { name = "sphinx-copybutton" },
+]
+jupyter = [
+    { name = "jupyterlab" },
+    { name = "jupyterlab-code-formatter" },
+    { name = "jupyterlab-git" },
+    { name = "jupyterlab-lsp" },
+    { name = "jupyterlab-myst" },
+    { name = "python-lsp-ruff" },
+    { name = "python-lsp-server", extras = ["rope"] },
+]
+test = [{ name = "nbmake" }]
 
 [[package]]
 name = "google-pasta"
