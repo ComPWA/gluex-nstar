@@ -13,13 +13,13 @@ version = "0.1.0"
 [dependency-groups]
 dev = [
     "ruff",
+    "sphinx-autobuild",
     {include-group = "doc"},
     {include-group = "jupyter"},
     {include-group = "test"},
 ]
 doc = [
     "myst-nb",
-    "sphinx-autobuild",
     "sphinx-book-theme",
     "sphinx-comments",
     "sphinx-copybutton",
