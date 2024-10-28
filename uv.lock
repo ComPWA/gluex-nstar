@@ -554,7 +554,62 @@ wheels = [
 name = "gluex-nstar"
 version = "0.1.0"
 source = { editable = "." }
-dependencies = [
+
+[package.dependency-groups]
+dev = [
+    { name = "ampform" },
+    { name = "ampform-dpd" },
+    { name = "ipympl" },
+    { name = "ipywidgets" },
+    { name = "jupyterlab" },
+    { name = "jupyterlab-code-formatter" },
+    { name = "jupyterlab-git" },
+    { name = "jupyterlab-lsp" },
+    { name = "jupyterlab-myst" },
+    { name = "matplotlib" },
+    { name = "myst-nb" },
+    { name = "nbmake" },
+    { name = "python-lsp-ruff" },
+    { name = "python-lsp-server", extra = ["rope"] },
+    { name = "qrules", extra = ["viz"] },
+    { name = "ruff" },
+    { name = "sphinx-autobuild" },
+    { name = "sphinx-book-theme" },
+    { name = "sphinx-comments" },
+    { name = "sphinx-copybutton" },
+    { name = "tensorwaves", extra = ["jax", "pwa"] },
+]
+doc = [
+    { name = "ampform" },
+    { name = "ampform-dpd" },
+    { name = "ipympl" },
+    { name = "ipywidgets" },
+    { name = "matplotlib" },
+    { name = "myst-nb" },
+    { name = "qrules", extra = ["viz"] },
+    { name = "sphinx-autobuild" },
+    { name = "sphinx-book-theme" },
+    { name = "sphinx-comments" },
+    { name = "sphinx-copybutton" },
+    { name = "tensorwaves", extra = ["jax", "pwa"] },
+]
+jupyter = [
+    { name = "ampform" },
+    { name = "ampform-dpd" },
+    { name = "ipympl" },
+    { name = "ipywidgets" },
+    { name = "jupyterlab" },
+    { name = "jupyterlab-code-formatter" },
+    { name = "jupyterlab-git" },
+    { name = "jupyterlab-lsp" },
+    { name = "jupyterlab-myst" },
+    { name = "matplotlib" },
+    { name = "python-lsp-ruff" },
+    { name = "python-lsp-server", extra = ["rope"] },
+    { name = "qrules", extra = ["viz"] },
+    { name = "tensorwaves", extra = ["jax", "pwa"] },
+]
+notebooks = [
     { name = "ampform" },
     { name = "ampform-dpd" },
     { name = "ipympl" },
@@ -563,46 +618,67 @@ dependencies = [
     { name = "qrules", extra = ["viz"] },
     { name = "tensorwaves", extra = ["jax", "pwa"] },
 ]
-
-[package.dependency-groups]
-dev = [
-    { name = "jupyterlab" },
-    { name = "jupyterlab-code-formatter" },
-    { name = "jupyterlab-git" },
-    { name = "jupyterlab-lsp" },
-    { name = "jupyterlab-myst" },
-    { name = "myst-nb" },
-    { name = "nbmake" },
-    { name = "python-lsp-ruff" },
-    { name = "python-lsp-server", extra = ["rope"] },
-    { name = "ruff" },
-    { name = "sphinx-autobuild" },
-    { name = "sphinx-book-theme" },
-    { name = "sphinx-comments" },
-    { name = "sphinx-copybutton" },
-]
-doc = [
-    { name = "myst-nb" },
-    { name = "sphinx-autobuild" },
-    { name = "sphinx-book-theme" },
-    { name = "sphinx-comments" },
-    { name = "sphinx-copybutton" },
-]
-jupyter = [
-    { name = "jupyterlab" },
-    { name = "jupyterlab-code-formatter" },
-    { name = "jupyterlab-git" },
-    { name = "jupyterlab-lsp" },
-    { name = "jupyterlab-myst" },
-    { name = "python-lsp-ruff" },
-    { name = "python-lsp-server", extra = ["rope"] },
-]
 test = [
     { name = "nbmake" },
 ]
 
 [package.metadata]
-requires-dist = [
+
+[package.metadata.dependency-groups]
+dev = [
+    { name = "ampform" },
+    { name = "ampform-dpd" },
+    { name = "ipympl" },
+    { name = "ipywidgets" },
+    { name = "jupyterlab" },
+    { name = "jupyterlab-code-formatter" },
+    { name = "jupyterlab-git" },
+    { name = "jupyterlab-lsp" },
+    { name = "jupyterlab-myst" },
+    { name = "matplotlib" },
+    { name = "myst-nb" },
+    { name = "nbmake" },
+    { name = "python-lsp-ruff" },
+    { name = "python-lsp-server", extras = ["rope"] },
+    { name = "qrules", extras = ["viz"] },
+    { name = "ruff" },
+    { name = "sphinx-autobuild" },
+    { name = "sphinx-book-theme" },
+    { name = "sphinx-comments" },
+    { name = "sphinx-copybutton" },
+    { name = "tensorwaves", extras = ["jax", "pwa"] },
+]
+doc = [
+    { name = "ampform" },
+    { name = "ampform-dpd" },
+    { name = "ipympl" },
+    { name = "ipywidgets" },
+    { name = "matplotlib" },
+    { name = "myst-nb" },
+    { name = "qrules", extras = ["viz"] },
+    { name = "sphinx-autobuild" },
+    { name = "sphinx-book-theme" },
+    { name = "sphinx-comments" },
+    { name = "sphinx-copybutton" },
+    { name = "tensorwaves", extras = ["jax", "pwa"] },
+]
+jupyter = [
+    { name = "ampform" },
+    { name = "ampform-dpd" },
+    { name = "ipympl" },
+    { name = "ipywidgets" },
+    { name = "jupyterlab" },
+    { name = "jupyterlab-code-formatter" },
+    { name = "jupyterlab-git" },
+    { name = "jupyterlab-lsp" },
+    { name = "jupyterlab-myst" },
+    { name = "matplotlib" },
+    { name = "python-lsp-ruff" },
+    { name = "python-lsp-server", extras = ["rope"] },
+    { name = "qrules", extras = ["viz"] },
+    { name = "tensorwaves", extras = ["jax", "pwa"] },
+]
+notebooks = [
     { name = "ampform" },
     { name = "ampform-dpd" },
     { name = "ipympl" },
@@ -610,40 +686,6 @@ requires-dist = [
     { name = "matplotlib" },
     { name = "qrules", extras = ["viz"] },
     { name = "tensorwaves", extras = ["jax", "pwa"] },
-]
-
-[package.metadata.dependency-groups]
-dev = [
-    { name = "jupyterlab" },
-    { name = "jupyterlab-code-formatter" },
-    { name = "jupyterlab-git" },
-    { name = "jupyterlab-lsp" },
-    { name = "jupyterlab-myst" },
-    { name = "myst-nb" },
-    { name = "nbmake" },
-    { name = "python-lsp-ruff" },
-    { name = "python-lsp-server", extras = ["rope"] },
-    { name = "ruff" },
-    { name = "sphinx-autobuild" },
-    { name = "sphinx-book-theme" },
-    { name = "sphinx-comments" },
-    { name = "sphinx-copybutton" },
-]
-doc = [
-    { name = "myst-nb" },
-    { name = "sphinx-autobuild" },
-    { name = "sphinx-book-theme" },
-    { name = "sphinx-comments" },
-    { name = "sphinx-copybutton" },
-]
-jupyter = [
-    { name = "jupyterlab" },
-    { name = "jupyterlab-code-formatter" },
-    { name = "jupyterlab-git" },
-    { name = "jupyterlab-lsp" },
-    { name = "jupyterlab-myst" },
-    { name = "python-lsp-ruff" },
-    { name = "python-lsp-server", extras = ["rope"] },
 ]
 test = [{ name = "nbmake" }]
 

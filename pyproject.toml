@@ -4,15 +4,6 @@ requires = ["setuptools"]
 
 [project]
 authors = [{name = "Vitor Shen"}]
-dependencies = [
-    "ampform",
-    "ampform-dpd",
-    "ipympl",
-    "ipywidgets",
-    "matplotlib",
-    "qrules[viz]",
-    "tensorwaves[jax,pwa]",
-]
 license = {file = "LICENSE"}
 name = "gluex-nstar"
 readme = "README.md"
@@ -32,6 +23,7 @@ doc = [
     "sphinx-book-theme",
     "sphinx-comments",
     "sphinx-copybutton",
+    {include-group = "notebooks"},
 ]
 jupyter = [
     "jupyterlab",
@@ -41,6 +33,16 @@ jupyter = [
     "jupyterlab-myst",
     "python-lsp-ruff",
     "python-lsp-server[rope]",
+    {include-group = "notebooks"},
+]
+notebooks = [
+    "ampform",
+    "ampform-dpd",
+    "ipympl",
+    "ipywidgets",
+    "matplotlib",
+    "qrules[viz]",
+    "tensorwaves[jax,pwa]",
 ]
 test = ["nbmake"]
 
