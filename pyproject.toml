@@ -40,6 +40,7 @@ dev = [
     "gluex-nstar[doc]",
     "gluex-nstar[jupyter]",
     "gluex-nstar[sty]",
+    "gluex-nstar[test]",
 ]
 doc = [
     "sphinx-autobuild",
@@ -57,6 +58,7 @@ jupyter = [
     "python-lsp-server[rope]",
 ]
 sty = ["ruff"]
+test = ["nbmake"]
 
 [tool.ruff]
 extend-include = ["*.ipynb"]
@@ -250,6 +252,13 @@ commands =
 description = Check external links in the documentation (requires internet connection)
 setenv =
     {[testenv:doclive]setenv}
+
+[testenv:nb]
+allowlist_externals =
+    pytest
+commands =
+    pytest --nbmake {posargs:docs}
+description = Run all notebooks with pytest
 
 [testenv:sty]
 allowlist_externals =
