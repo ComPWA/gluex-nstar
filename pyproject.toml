@@ -17,7 +17,6 @@ dependencies = [
     "numpy",
     "pandas",
     "phasespace",
-    "pre-commit-uv",
     "python-lsp-ruff",
     "python-lsp-server",
     "qrules",
@@ -41,8 +40,6 @@ dev = [
     "gluex-nstar[doc]",
     "gluex-nstar[jupyter]",
     "gluex-nstar[sty]",
-    "pre-commit-uv",
-    "tox",
 ]
 doc = [
     "sphinx-autobuild",
