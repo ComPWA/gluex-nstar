@@ -81,11 +81,6 @@ repos:
     hooks:
       - id: taplo-format
 
-  - repo: https://github.com/ComPWA/taplo-pre-commit
-    rev: v0.9.3
-    hooks:
-      - id: taplo-format
-
   - repo: https://github.com/pappasam/toml-sort
     rev: v0.23.1
     hooks:
