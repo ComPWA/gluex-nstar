@@ -160,8 +160,6 @@ skipsdist = True
 
 [testenv]
 passenv = *
-setenv =
-    PYTHONHASHSEED = 0
 
 [testenv:doc]
 allowlist_externals =
