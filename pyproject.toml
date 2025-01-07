@@ -117,6 +117,7 @@ split-on-trailing-comma = false
     "RUF001",
     "S101",
     "T20",
+    "TC00",
     "TCH",
 ]
 "docs/*" = [
