@@ -11,7 +11,7 @@ repos:
       - id: check-useless-excludes
 
   - repo: https://github.com/ComPWA/policy
-    rev: 0.5.15
+    rev: 0.6.1
     hooks:
       - id: check-dev-files
         args:
@@ -23,6 +23,7 @@ repos:
           - --repo-name="Symbolic Amplitudes for Light Baryons"
       - id: fix-nbformat-version
       - id: remove-empty-tags
+      - id: set-nb-display-name
 
   - repo: https://github.com/kynan/nbstripout
     rev: 0.8.1
@@ -53,7 +54,7 @@ repos:
             metadata.vscode
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.9.1
+    rev: v0.9.3
     hooks:
       - id: ruff
         args: [--fix]
@@ -91,7 +92,7 @@ repos:
           - --in-place
 
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
-    rev: 3.0.3
+    rev: 3.2.0
     hooks:
       - id: editorconfig-checker
         name: editorconfig
@@ -102,6 +103,6 @@ repos:
           )$
 
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: 0.5.18
+    rev: 0.5.25
     hooks:
       - id: uv-lock
