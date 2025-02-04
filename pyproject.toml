@@ -140,7 +140,6 @@ in_place = true
 sort_first = [
     "build-system",
     "project",
-    "tool.tox.env_run_base",
 ]
 spaces_indent_inline_array = 4
 trailing_comma_inline_array = true
@@ -157,9 +156,6 @@ requires = ["tox>=4.21.0"]
 skip_install = true
 skip_missing_interpreters = true
 
-[tool.tox.env_run_base]
-pass_env = ["*"]
-
 [tool.tox.env.doc]
 allowlist_externals = ["sphinx-build"]
 commands = [
@@ -174,6 +170,7 @@ commands = [
     ],
 ]
 description = "Build documentation and API through Sphinx"
+pass_env = ["*"]
 set_env.PYTHONWARNINGS = ""
 
 [tool.tox.env.doclive]
@@ -199,10 +196,11 @@ commands = [
     ],
 ]
 description = "Set up a server to directly preview changes to the HTML pages"
+pass_env = ["*"]
 set_env.PYTHONWARNINGS = ""
 
 [tool.tox.env.docnb]
-base = ["tool.tox.env.doc", "tool.tox.env_run_base"]
+base = ["tool.tox.env.doc"]
 description = "{[tool.tox.env.doc]description} with cached notebook execution"
 set_env = [
     {replace = "ref", of = ["tool.tox.env.doc.set_env"]},
@@ -210,7 +208,7 @@ set_env = [
 ]
 
 [tool.tox.env.docnb-force]
-base = ["tool.tox.env.doc", "tool.tox.env_run_base"]
+base = ["tool.tox.env.doc"]
 description = "{[tool.tox.env.doc]description} with notebook execution (no cache)"
 set_env = [
     {replace = "ref", of = ["tool.tox.env.doc.set_env"]},
@@ -218,7 +216,7 @@ set_env = [
 ]
 
 [tool.tox.env.docnblive]
-base = ["tool.tox.env.doclive", "tool.tox.env_run_base"]
+base = ["tool.tox.env.doclive"]
 description = "{[tool.tox.env.doclive]description} with cached notebook execution"
 set_env = [
     {replace = "ref", of = ["tool.tox.env.doclive.set_env"]},
@@ -226,7 +224,7 @@ set_env = [
 ]
 
 [tool.tox.env.linkcheck]
-allowlist_externals = ["sphinx-build"]
+base = ["tool.tox.env.doc"]
 commands = [
     [
         "sphinx-build",
@@ -242,8 +240,10 @@ description = "Check external links in the documentation (requires internet conn
 allowlist_externals = ["pytest"]
 commands = [["pytest", "--nbmake", "{posargs:docs}"]]
 description = "Run all notebooks with pytest"
+pass_env = ["*"]
 
 [tool.tox.env.sty]
 allowlist_externals = ["pre-commit"]
 commands = [["pre-commit", "run", "--all-files", {replace = "posargs", extend = true}]]
 description = "Perform all linting, formatting, and spelling checks"
+pass_env = ["*"]
