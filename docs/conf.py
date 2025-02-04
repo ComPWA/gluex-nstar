@@ -80,7 +80,7 @@ myst_enable_extensions = [
     "html_image",
     "smartquotes",
 ]
-nb_execution_mode = "cache" if os.environ.get("EXECUTE_NB") else "off"
+nb_execution_mode = "off" if os.environ.get("EXECUTE_NB") is None else "cache"
 nb_execution_show_tb = True
 nb_execution_timeout = -1
 nb_render_markdown_format = "myst"
