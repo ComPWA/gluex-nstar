@@ -1,9 +1,11 @@
 {
   "[git-commit]": {
-    "editor.rulers": [72]
+    "editor.rulers": [72],
+    "rewrap.wrappingColumn": 72
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -23,14 +25,9 @@
   },
   "diffEditor.experimental.showMoves": true,
   "editor.formatOnSave": true,
-  "files.associations": {
-    "**/pixi.lock": "yaml"
-  },
   "git.rebaseWhenSync": true,
   "github-actions.workflows.pinned.refresh.enabled": true,
-  "github-actions.workflows.pinned.workflows": [
-    ".github/workflows/ci-docs.yml"
-  ],
+  "github-actions.workflows.pinned.workflows": [".github/workflows/ci.yml"],
   "gitlens.telemetry.enabled": false,
   "livePreview.defaultPreviewPath": "docs/_build/html",
   "multiDiffEditor.experimental.enabled": true,
@@ -39,10 +36,15 @@
   },
   "notebook.formatOnSave.enabled": true,
   "notebook.gotoSymbols.showAllSymbols": true,
+  "python.defaultInterpreterPath": ".venv/bin/python",
   "python.terminal.activateEnvironment": false,
   "redhat.telemetry.enabled": false,
+  "rewrap.wrappingColumn": 88,
   "ruff.enable": true,
   "ruff.importStrategy": "fromEnvironment",
   "ruff.organizeImports": true,
+  "search.exclude": {
+    "**/uv.lock": true
+  },
   "telemetry.telemetryLevel": "off"
 }
