@@ -647,7 +647,7 @@ test = [
 [package.metadata.requires-dev]
 dev = [
     { name = "ampform" },
-    { name = "ampform-dpd", specifier = ">=0.2,<0.3" },
+    { name = "ampform-dpd", specifier = "~=0.2.0" },
     { name = "ipympl" },
     { name = "ipywidgets" },
     { name = "jupyterlab" },
@@ -672,7 +672,7 @@ dev = [
 ]
 doc = [
     { name = "ampform" },
-    { name = "ampform-dpd", specifier = ">=0.2,<0.3" },
+    { name = "ampform-dpd", specifier = "~=0.2.0" },
     { name = "ipympl" },
     { name = "ipywidgets" },
     { name = "matplotlib" },
@@ -685,7 +685,7 @@ doc = [
 ]
 jupyter = [
     { name = "ampform" },
-    { name = "ampform-dpd", specifier = ">=0.2,<0.3" },
+    { name = "ampform-dpd", specifier = "~=0.2.0" },
     { name = "ipympl" },
     { name = "ipywidgets" },
     { name = "jupyterlab" },
@@ -702,7 +702,7 @@ jupyter = [
 ]
 notebooks = [
     { name = "ampform" },
-    { name = "ampform-dpd", specifier = ">=0.2,<0.3" },
+    { name = "ampform-dpd", specifier = "~=0.2.0" },
     { name = "ipympl" },
     { name = "ipywidgets" },
     { name = "matplotlib" },
@@ -711,7 +711,7 @@ notebooks = [
 ]
 test = [
     { name = "ampform" },
-    { name = "ampform-dpd", specifier = ">=0.2,<0.3" },
+    { name = "ampform-dpd", specifier = "~=0.2.0" },
     { name = "ipympl" },
     { name = "ipywidgets" },
     { name = "matplotlib" },
