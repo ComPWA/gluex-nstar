@@ -39,7 +39,7 @@ jupyter = [
 ]
 notebooks = [
     "ampform",
-    "ampform-dpd",
+    "ampform-dpd~=0.2.0",
     "ipympl",
     "ipywidgets",
     "matplotlib",
