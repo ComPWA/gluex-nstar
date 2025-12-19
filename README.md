@@ -22,9 +22,9 @@ a technique employed in the ComPWA project.
 
 - **Main physics target:**
   $\gamma\,p \to K^+\,\pi^0\,\Lambda$, with resonance contributions in:
-  - the $\LambdaK^+$ system ($N^*$),
-  - the $\Lambda\pi^0$ system ($Y^*$),
-  - the $K^+\pi^0$ system ($K^*$).
+  - the $\Lambda K^+$ system ($N^*$),
+  - the $\Lambda \pi^0$ system ($Y^*$),
+  - the $K^+ \pi^0$ system ($K^*$).
 
 Current long-term plan:
 This research project focuses on developing and applying amplitude models
