@@ -33,7 +33,8 @@ $N^*$ and $Y^*$ resonances.
 
 ---
 
-> [!WARNING] > **Scope and physical interpretation**
+> [!WARNING]
+> **Scope and physical interpretation**
 >
 > The amplitude models in this repository are **symbolic, CAS-assisted prototypes**
 > developed primarily in an **s-channel decay-amplitude mindset**.
