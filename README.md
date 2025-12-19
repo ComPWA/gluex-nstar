@@ -29,7 +29,7 @@ a technique employed in the ComPWA project.
 Current long-term plan:
 This research project focuses on developing and applying amplitude models
 to analyze data from the GlueX experiment, specifically targeting
-$N^*$ and $Y^*$ resonances.
+$N^\*$ and $Y^\*$ resonances.
 
 ---
 
