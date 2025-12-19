@@ -5,7 +5,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Binder](https://static.mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ComPWA/gluex-nstar/stable?urlpath=lab)
 
-## $N^*$ Resonances at GlueX
+## $N^{*}$ Resonances at GlueX
 
 > [!NOTE]
 > This repository is under active development.
@@ -15,21 +15,21 @@ We are doing amplitude analysis and Partial Wave Analysis (PWA) with
 a technique employed in the ComPWA project.
 
 - **First demonstration example:**
-  $\gamma\,p \to \eta\,\pi^0\,p$, with $N^*$ resonances in
+  $\gamma p \to \eta \pi^0 p$, with $N^{*}$ resonances in
 
-  - the $p\,\eta$ subsystem, and
-  - the $p\,\pi^0$ subsystem.
+  - the $p\eta$ subsystem, and
+  - the $p\pi^0$ subsystem.
 
 - **Main physics target:**
-  $\gamma\,p \to K^+\,\pi^0\,\Lambda$, with resonance contributions in:
-  - the $\Lambda\,K^+$ system ($N^*$),
-  - the $\Lambda\,\pi^0$ system ($Y^*$),
-  - the $K^+\,\pi^0$ system ($K^*$).
+  $\gamma p \to K^+ \pi^0 \Lambda$, with resonance contributions in:
+  - the $\Lambda K^+$ system ($N^{*}$),
+  - the $\Lambda \pi^0$ system ($Y^{*}$),
+  - the $K^+ \pi^0$ system ($K^{*}$).
 
 Current long-term plan:
 This research project focuses on developing and applying amplitude models
 to analyze data from the GlueX experiment, specifically targeting
-$N^\*$ and $Y^\*$ resonances.
+$N^{*}$ and $Y^{*}$ resonances.
 
 ---
 
@@ -41,14 +41,14 @@ $N^\*$ and $Y^\*$ resonances.
 > developed primarily in an **s-channel decay-amplitude mindset**.
 >
 > While reactions such as
-> $p\,\gamma \to \eta\,\pi^0\,p$ and
-> $p\,\gamma \to K^+\,\pi^0\,\Lambda$
+> $\gamma p \to \eta \pi^0 p$ and
+> $\gamma p \to K^+ \pi^0 \Lambda$
 > are used as demonstration channels, the current implementations:
 >
 > - model **sequential s-channel decay chains**,
 > - **do not include a realistic treatment of photoproduction dynamics**, such as
->   t-channel (or u-channel) exchange mechanisms, Reggeized exchanges, or energy-dependent
->   production amplitudes,
+>   t-channel (or u-channel) exchange mechanisms, Reggeized exchanges, or
+>   energy-dependent production amplitudes,
 > - are therefore **not physically realistic descriptions of GlueX photoproduction**,
 >   which is dominated by t-channel processes at GlueX energies.
 >
