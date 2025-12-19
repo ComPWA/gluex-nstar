@@ -22,9 +22,9 @@ a technique employed in the ComPWA project.
 
 - **Main physics target:**
   $\gamma\,p \to K^+\,\pi^0\,\Lambda$, with resonance contributions in:
-  - the $\Lambda K^+$ system ($N^*$),
-  - the $\Lambda \pi^0$ system ($Y^*$),
-  - the $K^+ \pi^0$ system ($K^*$).
+  - the $\Lambda\,K^+$ system ($N^*$),
+  - the $\Lambda\,\pi^0$ system ($Y^*$),
+  - the $K^+\,\pi^0$ system ($K^*$).
 
 Current long-term plan:
 This research project focuses on developing and applying amplitude models
@@ -33,7 +33,9 @@ $N^*$ and $Y^*$ resonances.
 
 ---
 
-> [!WARNING] > **Scope and physical interpretation**
+<!-- prettier-ignore -->
+> [!WARNING]
+> **Scope and physical interpretation**
 >
 > The amplitude models in this repository are **symbolic, CAS-assisted prototypes**
 > developed primarily in an **s-channel decay-amplitude mindset**.
