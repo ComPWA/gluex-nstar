@@ -16,7 +16,6 @@ a technique employed in the ComPWA project.
 
 - **First demonstration example:**
   $\gamma p \to \eta \pi^0 p$, with $N^{*}$ resonances in
-
   - the $p\eta$ subsystem, and
   - the $p\pi^0$ subsystem.
 
