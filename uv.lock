@@ -54,7 +54,7 @@ viz = [
 
 [[package]]
 name = "ampform-dpd"
-version = "0.2.4"
+version = "0.4.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ampform" },
@@ -66,9 +66,9 @@ dependencies = [
     { name = "sympy" },
     { name = "tensorwaves", extra = ["jax"] },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/93/d3/0f7fcb0b69af711560830f4952295832bba0249cd070f6a1db2638f3068a/ampform_dpd-0.2.4.tar.gz", hash = "sha256:b3fa738c5d7715c904df03bdd2c7747a96bb7c8e4167a948e0c3729f475aa7a3", size = 426932, upload-time = "2025-10-27T10:40:41.965Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3c/3d/af3f629c3120632ce5ddbe2baaee8f87f5ef6123c9aa45d6ec8b6f8605fa/ampform_dpd-0.4.0.tar.gz", hash = "sha256:c32356ae6c00881ab106583e3e94614f8e3657a4acc8b38d5e44d5eb61c2726a", size = 362741, upload-time = "2026-02-16T17:00:01.061Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7c/41/fdf5d0b22bf612d1be21734539b50bb231e5de79f776253ca1a5644be812/ampform_dpd-0.2.4-py3-none-any.whl", hash = "sha256:ad762de8ecec1792f6112134bda98686690d810c6cedee293e41c19bc778d475", size = 42665, upload-time = "2025-10-27T10:40:40.817Z" },
+    { url = "https://files.pythonhosted.org/packages/e2/67/b78fba3e3031ecc5dafca4a39b0d8895f10db878823e207d69a32f6d1882/ampform_dpd-0.4.0-py3-none-any.whl", hash = "sha256:28ac25b814d5467b825c9a906ee050fba5c66ad2da7a645f70202684060c3047", size = 43004, upload-time = "2026-02-16T16:59:59.204Z" },
 ]
 
 [[package]]
@@ -640,7 +640,7 @@ test = [
 [package.metadata.requires-dev]
 dev = [
     { name = "ampform" },
-    { name = "ampform-dpd", specifier = "~=0.2.0" },
+    { name = "ampform-dpd", specifier = "~=0.4.0" },
     { name = "ipympl" },
     { name = "ipywidgets" },
     { name = "jupyter-ruff" },
@@ -662,7 +662,7 @@ dev = [
 ]
 doc = [
     { name = "ampform" },
-    { name = "ampform-dpd", specifier = "~=0.2.0" },
+    { name = "ampform-dpd", specifier = "~=0.4.0" },
     { name = "ipympl" },
     { name = "ipywidgets" },
     { name = "matplotlib" },
@@ -675,7 +675,7 @@ doc = [
 ]
 jupyter = [
     { name = "ampform" },
-    { name = "ampform-dpd", specifier = "~=0.2.0" },
+    { name = "ampform-dpd", specifier = "~=0.4.0" },
     { name = "ipympl" },
     { name = "ipywidgets" },
     { name = "jupyter-ruff" },
@@ -692,7 +692,7 @@ jupyter = [
 ]
 notebooks = [
     { name = "ampform" },
-    { name = "ampform-dpd", specifier = "~=0.2.0" },
+    { name = "ampform-dpd", specifier = "~=0.4.0" },
     { name = "ipympl" },
     { name = "ipywidgets" },
     { name = "matplotlib" },
@@ -701,7 +701,7 @@ notebooks = [
 ]
 test = [
     { name = "ampform" },
-    { name = "ampform-dpd", specifier = "~=0.2.0" },
+    { name = "ampform-dpd", specifier = "~=0.4.0" },
     { name = "ipympl" },
     { name = "ipywidgets" },
     { name = "matplotlib" },
