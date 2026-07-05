@@ -48,6 +48,15 @@ test = [
     {include-group = "notebooks"},
 ]
 
+[tool.compwa.policy]
+doc-apt-packages = "graphviz"
+repo-name = "\"Symbolic Amplitudes for Light Baryons\""
+
+[tool.compwa.policy.github]
+github-pages = true
+no-cd = true
+no-pypi = true
+
 [tool.poe.executor]
 isolated = true
 no-group = "dev"
