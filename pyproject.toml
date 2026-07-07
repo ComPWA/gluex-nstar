@@ -37,7 +37,7 @@ jupyter = [
 ]
 notebooks = [
     "ampform",
-    "ampform-dpd~=0.2.0",
+    "ampform-dpd~=0.4.0",
     "ipympl",
     "ipywidgets",
     "matplotlib",
@@ -47,6 +47,15 @@ notebooks = [
 test = [
     {include-group = "notebooks"},
 ]
+
+[tool.compwa.policy]
+doc-apt-packages = "graphviz"
+repo-name = "\"Symbolic Amplitudes for Light Baryons\""
+
+[tool.compwa.policy.github]
+github-pages = true
+no-cd = true
+no-pypi = true
 
 [tool.poe.executor]
 isolated = true
@@ -98,6 +107,11 @@ env = {EXECUTE_NB = "yes"}
 help = "Build documentation and API with cached notebook execution"
 sequence = ["doc"]
 
+[tool.poe.groups.doc.tasks.docnb-force]
+env = {FORCE_EXECUTE_NB = "yes"}
+help = "Build documentation and API with notebook execution (no cache)"
+sequence = ["doc"]
+
 [tool.poe.groups.doc.tasks.docnblive]
 env = {EXECUTE_NB = "yes"}
 help = "Set up a server to directly preview changes to the HTML pages with cached notebook execution"
@@ -138,11 +152,6 @@ sequence = [
     "linkcheck",
     "style",
 ]
-
-[tool.poe.tasks.docnb-force]
-env = {FORCE_EXECUTE_NB = "yes"}
-help = "Build documentation and API with notebook execution (no cache)"
-sequence = ["doc"]
 
 [tool.poe.tasks.style]
 cmd = "pre-commit run --all-files"
