@@ -32,6 +32,7 @@
     "ms-python.pylint",
     "ms-python.vscode-pylance",
     "ms-toolsai.vscode-jupyter-slideshow",
+    "ryanluker.vscode-coverage-gutters",
     "tamasfe.even-better-toml",
     "travisillig.vscode-json-stable-stringify",
     "tyriar.sort-lines"

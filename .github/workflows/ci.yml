@@ -31,3 +31,8 @@ jobs:
     secrets:
       token: ${{ secrets.PAT }}
     uses: ComPWA/actions/.github/workflows/style.yml@v4.0
+  test:
+    uses: ComPWA/actions/.github/workflows/test.yml@v4.0
+    with:
+      macos-python-version: "3.13"
+      multithreaded: false
