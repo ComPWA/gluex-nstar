@@ -9,6 +9,7 @@ authors = [
     { name = "Vitor Shen" },
     { name = "Remco de Boer" },
 ]
+dependencies = ["qrules"]
 
 [dependency-groups]
 dev = [
@@ -175,6 +176,7 @@ help = "Run all notebooks"
 extend-include = ["*.ipynb"]
 preview = true
 show-fixes = true
+src = ["src"]
 
 [tool.ruff.format]
 docstring-code-format = true
@@ -219,6 +221,7 @@ allow-dict-calls-with-keyword-arguments = true
 
 [tool.ruff.lint.isort]
 split-on-trailing-comma = false
+known-first-party = ["gluex_nstar"]
 
 [tool.ruff.lint.per-file-ignores]
 "*.ipynb" = [
@@ -255,6 +258,9 @@ split-on-trailing-comma = false
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.setuptools.package-data]
+gluex_nstar = ["additional-particles.yml"]
 
 [tool.tombi.files]
 exclude = ["**/uv.lock"]
