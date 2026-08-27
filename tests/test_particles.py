@@ -56,6 +56,6 @@ def test_generate_markdown_table() -> None:
 
     assert "| Particle | Name | PID |" in table
     assert (
-        r"| $T$ | `test` | 1 | $\frac{1}{2}^{- } \; (\frac{1}{2}^{ })$ | $\frac{1}{2}$ | 1.25 | 0.5 | 1 | 0 | 1 |"
+        R"| $T$ | `test` | 1 | $\frac{1}{2}^{- } \; (\frac{1}{2}^{ })$ | $\frac{1}{2}$ | 1.25 | 0.5 | 1 | 0 | 1 |"
         in table
     )

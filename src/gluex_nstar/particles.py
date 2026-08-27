@@ -19,7 +19,7 @@ def create_pgamma(mass: float) -> tuple[Particle, Particle]:
     """Create the spin-1/2 and spin-3/2 virtual p-gamma states."""
     spin_half = Particle(
         name="pgamma1",
-        latex=r"p\gamma (s1/2)",
+        latex=R"p\gamma (s1/2)",
         spin=0.5,
         mass=mass,
         charge=1,
@@ -53,7 +53,7 @@ def generate_markdown_table(
     particles: Iterable[str],
 ) -> str:
     """Render selected particle definitions as a Markdown table."""
-    src = dedent(r"""
+    src = dedent(R"""
     | Particle | Name | PID | $J^{PC} (I^G)$ | $I_3$ | $M$ | $\Gamma$ | $Q$ | $S$ | $B$ |
     | :------- |------|-----|----------------|-------|-----|----------|-----|-----|-----|
     """)
