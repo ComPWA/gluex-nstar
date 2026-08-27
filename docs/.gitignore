@@ -2,4 +2,3 @@
 *.svg
 .ipynb_checkpoints
 _build
-.pixi/
