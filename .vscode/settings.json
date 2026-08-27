@@ -41,6 +41,8 @@
   "notebook.gotoSymbols.showAllSymbols": true,
   "python.defaultInterpreterPath": ".venv/bin/python",
   "python.terminal.activateEnvironment": false,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
   "redhat.telemetry.enabled": false,
   "rewrap.wrappingColumn": 88,
   "ruff.enable": true,
@@ -49,5 +51,7 @@
   "search.exclude": {
     "**/uv.lock": true
   },
-  "telemetry.telemetryLevel": "off"
+  "telemetry.telemetryLevel": "off",
+  "testing.coverageToolbarEnabled": true,
+  "testing.showCoverageInExplorer": true
 }

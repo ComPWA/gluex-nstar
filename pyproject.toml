@@ -9,6 +9,8 @@ authors = [
     { name = "Vitor Shen" },
     { name = "Remco de Boer" },
 ]
+classifiers = ["Programming Language :: Python :: 3.13"]
+dependencies = ["qrules"]
 
 [dependency-groups]
 dev = [
@@ -44,7 +46,10 @@ notebooks = [
     "qrules[viz]",
     "tensorwaves[jax,pwa]",
 ]
-test = [{ include-group = "notebooks" }]
+test = [
+    "pytest",
+    { include-group = "notebooks" },
+]
 
 [build-system]
 requires = ["setuptools"]
@@ -52,10 +57,12 @@ build-backend = "setuptools.build_meta"
 
 [tool.compwa.policy]
 doc-apt-packages = "graphviz"
+pytest-single-threaded = true
 repo-name = "Symbolic Amplitudes for Light Baryons"
 
 [tool.compwa.policy.github]
 github-pages = true
+macos-python-version = "3.13"
 no-cd = true
 no-pypi = true
 
@@ -171,10 +178,22 @@ cmd = "pytest --nbmake --nbmake-timeout=0 ${paths}"
 executor = { group = "notebooks", with = "nbmake" }
 help = "Run all notebooks"
 
+[tool.poe.groups.test]
+heading = "Testing"
+
+[tool.poe.groups.test.tasks.test]
+cmd = "pytest"
+executor = { group = "test" }
+help = "Run the unit tests"
+
 [tool.ruff]
 extend-include = ["*.ipynb"]
 preview = true
 show-fixes = true
+src = [
+    "src",
+    "tests",
+]
 
 [tool.ruff.format]
 docstring-code-format = true
@@ -219,6 +238,7 @@ allow-dict-calls-with-keyword-arguments = true
 
 [tool.ruff.lint.isort]
 split-on-trailing-comma = false
+known-first-party = ["gluex_nstar"]
 
 [tool.ruff.lint.per-file-ignores]
 "*.ipynb" = [
@@ -252,9 +272,25 @@ split-on-trailing-comma = false
     "implicit-namespace-package",
     "undocumented-public-module",
 ]
+"tests/*" = [
+    "ANN",
+    "D",
+    "T20",
+    "assert",
+    "boolean-type-hint-positional-argument",
+    "float-equality-comparison",
+    "implicit-namespace-package",
+    "import-private-name",
+    "magic-value-comparison",
+    "no-self-use",
+    "private-member-access",
+]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.setuptools.package-data]
+gluex_nstar = ["additional-particles.yml"]
 
 [tool.tombi.files]
 exclude = ["**/uv.lock"]
