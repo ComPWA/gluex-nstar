@@ -12,6 +12,8 @@ exclude_patterns = [
     ".DS_Store",
     ".virtual_documents",
     "**.ipynb_checkpoints",
+    "AGENTS.md",
+    "CLAUDE.md",
     "Thumbs.db",
 ]
 extensions = [
